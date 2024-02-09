@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon_light {
+    filter: var(--icon-bg);
+}
+
+.icon_dark {
+    filter: var(--icon-bg-dark);
+}
+
+.button_light {
+    background-color: var(--btn-bg);
+}
+
+.button_dark {
+    background-color: var(--btn-bg-dark);
+}
+
+.Button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    height: 35px;
+}
+
+.Fieldset {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Label {
+    font-size: 15px;
+    width: 90px;
+    text-align: right;
+}
+
+.Input {
+    width: 100%;
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 1;
+    height: 35px;
+}
+
+.nav_item_container {
+    position: relative;
+}
+
+.toggle_btn {
+    position: static;
+}
+
+@media screen and (max-width: 767px) {
+    .toggle_btn {
+        position: absolute;
+        top: 1.5%;
+        right: 4%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .h1 {
+        font-size: 0.8rem;
+    }
+
+    .toggle_btn {
+        top: 1.2%;
+    }
+}

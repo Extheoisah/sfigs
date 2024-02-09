@@ -1,0 +1,179 @@
+.modal_links_light {
+    border-bottom: 1px solid var(--modal-links);
+    color: var(--text-color);
+}
+
+.modal_links_light:hover {
+    background-color: var(--modal-links);
+    cursor: pointer;
+}
+
+.modal_links_dark {
+    border-bottom: 1px solid var(--modal-links-dark);
+    color: var(--text-color-dark);
+}
+
+.modal_links_dark:hover {
+    background-color: var(--modal-links-dark);
+    cursor: pointer;
+}
+
+.modal_input_light {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--modal-links);
+    color: var(--text-color);
+}
+
+.modal_input_dark {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--modal-links-dark);
+    color: var(--text-color-dark);
+}
+
+.modal_links:last-child {
+    border-bottom: none;
+}
+
+.modal_text_light {
+    color: var(--text-color);
+}
+
+.modal_text_dark {
+    color: var(--text-color-dark);
+}
+
+.DialogOverlay {
+    background-color: inherit;
+    opacity: 0.2;
+    position: fixed;
+    inset: 0;
+    animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.DialogContent,
+.DialogContent2 {
+    border-radius: 6px;
+    box-shadow:
+        hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+        hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    position: fixed;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 450px;
+    max-height: 85vh;
+    padding: 25px;
+    animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.DialogContent2 {
+    width: 90vw;
+    max-width: 650px;
+    top: 60%;
+    left: 50%;
+}
+
+.dialog_light {
+    background-color: var(--modal-bg);
+    color: var(--text-color);
+}
+
+.dialog_dark {
+    background-color: var(--modal-bg-dark);
+    color: var(--text-color-dark);
+}
+
+.DialogContent:focus {
+    outline: none;
+}
+
+.DialogTitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.DialogDescription {
+    margin: 10px 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.IconButton {
+    font-family: inherit;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@keyframes overlayShow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes contentShow {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .DialogContent {
+        top: 45% !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .DialogContent {
+        top: 58%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .DialogContent {
+        top: 32%;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .DialogContent {
+        top: 40%;
+        left: 49%;
+        max-width: 450px;
+        max-height: auto;
+    }
+
+    .DialogContent2 {
+        left: 49%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .DialogContent {
+        top: 58%;
+    }
+    .DialogContent2 {
+        top: 50%;
+    }
+}

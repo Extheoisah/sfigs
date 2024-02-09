@@ -1,0 +1,528 @@
+{
+    "BtcPayServer": {
+        "name": "BtcPayServer",
+        "description": "",
+        "link": "https://github.com/btcpayserver/btcpayserver/issues",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C#", "Shell"]
+    },
+
+    "Wasabi": {
+        "name": "Wasabi",
+        "description": "",
+        "link": "https://github.com/zkSNACKs/WalletWasabi/issues",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C#"]
+    },
+
+    "Fedimint": {
+        "name": "Fedimint",
+        "description": "",
+        "link": "https://github.com/fedimint/fedimint/issues",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Rust", "Shell"]
+    },
+
+    "Polar": {
+        "name": "Polar",
+        "description": "",
+        "link": "https://github.com/jamaljsr/polar/issues",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Typescript", "Docker"]
+    },
+
+    "Bitcoin Core": {
+        "name": "Botcoin Core",
+        "description": "",
+        "link": "https://github.com/bitcoin/bitcoin/issues",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C++", "Python", "C"]
+    },
+
+    "Bitcoin XPUB Converter": {
+        "name": "Bitcoin XPUB Converter",
+        "description": "",
+        "link": "https://github.com/jlopp/xpub-converter",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Js"]
+    },
+
+    "Bitcoin Js": {
+        "name": "Bitcoin Js",
+        "description": "",
+        "link": "https://github.com/bitcoinjs/bitcoinjs-lib",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TS", "JS"]
+    },
+
+    "Electrum": {
+        "name": "Electrum",
+        "description": "",
+        "link": "https://github.com/spesmilo/electrum",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "Blue Wallet": {
+        "name": "Blue Wallet",
+        "description": "",
+        "link": "https://github.com/bluewallet/bluewallet",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["JS", "TS"]
+    },
+
+    "Samourai wallet": {
+        "name": "Samourai wallet",
+        "description": "",
+        "link": "https://code.samourai.io/wallet",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Kotlin", "Java"]
+    },
+
+    "LNDHub": {
+        "name": "LNDHub",
+        "description": "",
+        "link": "https://github.com/BlueWallet/LndHub",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["JS"]
+    },
+
+    "React Native LDK": {
+        "name": "React Native LDK",
+        "description": "",
+        "link": "https://github.com/BlueWallet/rn-ldk",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C++"]
+    },
+
+    "Phoenix": {
+        "name": "Phoenix",
+        "description": "",
+        "link": "https://github.com/ACINQ/phoenix",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C"]
+    },
+
+    "Eclair": {
+        "name": "Eclair",
+        "description": "",
+        "link": "https://github.com/ACINQ/eclair",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Scala"]
+    },
+
+    "Lightning Kotlin Multiplatform": {
+        "name": "Lightning Kotlin Multiplatform",
+        "description": "",
+        "link": "https://github.com/ACINQ/lightning-kmp",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Kotlin"]
+    },
+
+    "Btcd": {
+        "name": "Btcd",
+        "description": "",
+        "link": "https://github.com/btcsuite/btcd",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["GO"]
+    },
+
+    "Lightning Loop": {
+        "name": "Lightning Loop",
+        "description": "",
+        "link": "https://github.com/lightninglabs/loop",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["GO"]
+    },
+
+    "RTL": {
+        "name": "RTL",
+        "description": "",
+        "link": "https://github.com/Ride-The-Lightning/RTL",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TS", "JS"]
+    },
+
+    "Mempool": {
+        "name": "Mempool",
+        "description": "",
+        "link": "https://github.com/mempool/mempool",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TS"]
+    },
+
+    "Elements Project": {
+        "name": "Elements Project",
+        "description": "",
+        "link": "https://github.com/elementsproject/elements",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C++", "Python"]
+    },
+
+    "Pyblock": {
+        "name": "Pyblock",
+        "description": "",
+        "link": "https://github.com/curly60e/pyblock",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "BitcoinJ": {
+        "name": "BitcoinJ",
+        "description": "",
+        "link": "https://github.com/bitcoinj/bitcoinj",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Java"]
+    },
+
+    "Bitbox Wallet App": {
+        "name": "Bitbox Wallet App",
+        "description": "",
+        "link": "https://github.com/digitalbitbox/bitbox-wallet-app",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["GO", "TS"]
+    },
+
+    "Trezor Firmware": {
+        "name": "Trezor Firmware",
+        "description": "",
+        "link": "https://github.com/trezor/trezor-firmware",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python", "C"]
+    },
+
+    "Join Market": {
+        "name": "Join Market",
+        "description": "",
+        "link": "https://github.com/JoinMarket-Org/joinmarket-clientserver",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "Elements Lightning": {
+        "name": "Elements Lightning",
+        "description": "",
+        "link": "https://github.com/ElementsProject/lightning",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python", "C"]
+    },
+
+    "Lightning Pool": {
+        "name": "Lightning Pool",
+        "description": "",
+        "link": "https://github.com/lightninglabs/pool",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["GO"]
+    },
+
+    "Warden Terminal": {
+        "name": "Warden Terminal",
+        "description": "",
+        "link": "https://github.com/pxsocs/warden_terminal",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python", "TS"]
+    },
+
+    "Robosats": {
+        "name": "Robosats",
+        "description": "",
+        "link": "https://github.com/RoboSats/robosats",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "Join Market WebUI": {
+        "name": "Join Market WebUI",
+        "description": "",
+        "link": "https://github.com/joinmarket-webui/jam/",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TS"]
+    },
+
+    "Thunderhub": {
+        "name": "Thunderhub",
+        "description": "",
+        "link": "https://github.com/apotdevin/thunderhub",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TS"]
+    }
+}
