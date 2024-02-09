@@ -1,0 +1,40 @@
+.footer {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_button_dark {
+    background-color: inherit;
+    color: var(--issues-text-color-dark);
+}
+
+.footer_button_light {
+    background-color: inherit;
+    color: var(--issues-text-color);
+}
+
+.footer_link_dark {
+    color: var(--text-color-dark);
+    cursor: pointer;
+}
+
+.footer_link_light {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.footer_active_dark {
+    background-color: var(--footer-text-color-dark);
+}
+
+.footer_active_light {
+    background-color: var(--footer-text-color);
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        height: 20vh;
+    }
+}

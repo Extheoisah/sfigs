@@ -1,0 +1,528 @@
+{
+    "BtcPayServer": {
+        "name": "Btcpayserver",
+        "description": "",
+        "link": "https://github.com/btcpayserver/btcpayserver/issues",
+        "org": {
+            "link": "",
+            "name": "btcpayserver"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C#", "Shell"]
+    },
+
+    "Wasabi": {
+        "name": "WalletWasabi",
+        "description": "",
+        "link": "https://github.com/zkSNACKs/WalletWasabi/issues",
+        "org": {
+            "link": "",
+            "name": "zkSNACKs"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C#"]
+    },
+
+    "Fedimint": {
+        "name": "fedimint",
+        "description": "",
+        "link": "https://github.com/fedimint/fedimint/issues",
+        "org": {
+            "link": "",
+            "name": "fedimint"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Rust", "Shell"]
+    },
+
+    "Polar": {
+        "name": "polar",
+        "description": "",
+        "link": "https://github.com/jamaljsr/polar/issues",
+        "org": {
+            "link": "",
+            "name": "jamaljsr"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TypeScript"]
+    },
+
+    "Bitcoin Core": {
+        "name": "bitcoin",
+        "description": "",
+        "link": "https://github.com/bitcoin/bitcoin/issues",
+        "org": {
+            "link": "",
+            "name": "bitcoin"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C++", "Python", "C"]
+    },
+
+    "Bitcoin XPUB Converter": {
+        "name": "xpub-converter",
+        "description": "",
+        "link": "https://github.com/jlopp/xpub-converter/issues",
+        "org": {
+            "link": "",
+            "name": "jlopp"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["JavaScript"]
+    },
+
+    "Bitcoin Js": {
+        "name": "bitcoinjs-lib",
+        "description": "",
+        "link": "https://github.com/bitcoinjs/bitcoinjs-lib/issues",
+        "org": {
+            "link": "",
+            "name": "bitcoinjs"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TypeScript", "JavaScript"]
+    },
+
+    "Electrum": {
+        "name": "electrum",
+        "description": "",
+        "link": "https://github.com/spesmilo/electrum/issues",
+        "org": {
+            "link": "",
+            "name": "spesmilo"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "Blue Wallet": {
+        "name": "bluewallet",
+        "description": "",
+        "link": "https://github.com/bluewallet/bluewallet/issues",
+        "org": {
+            "link": "",
+            "name": "bluewallet"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["JavaScript", "TypeScript"]
+    },
+
+    "Samourai wallet": {
+        "name": "Samourai wallet",
+        "description": "",
+        "link": "https://code.samourai.io/wallet/issues",
+        "org": {
+            "link": "",
+            "name": ""
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Kotlin", "Java"]
+    },
+
+    "LNDHub": {
+        "name": "LndHub",
+        "description": "",
+        "link": "https://github.com/BlueWallet/LndHub/issues",
+        "org": {
+            "link": "",
+            "name": "BlueWallet"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["JavaScript"]
+    },
+
+    "React Native LDK": {
+        "name": "rn-ldk",
+        "description": "",
+        "link": "https://github.com/BlueWallet/rn-ldk/issues",
+        "org": {
+            "link": "",
+            "name": "BlueWallet"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C++"]
+    },
+
+    "Phoenix": {
+        "name": "phoenix",
+        "description": "",
+        "link": "https://github.com/ACINQ/phoenix/issues",
+        "org": {
+            "link": "",
+            "name": "ACINQ"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C"]
+    },
+
+    "Eclair": {
+        "name": "eclair",
+        "description": "",
+        "link": "https://github.com/ACINQ/eclair/issues",
+        "org": {
+            "link": "",
+            "name": "ACINQ"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Scala"]
+    },
+
+    "Lightning Kotlin Multiplatform": {
+        "name": "lightning-kmp",
+        "description": "",
+        "link": "https://github.com/ACINQ/lightning-kmp/issues",
+        "org": {
+            "link": "",
+            "name": "ACINQ"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Kotlin"]
+    },
+
+    "Btcd": {
+        "name": "btcd",
+        "description": "",
+        "link": "https://github.com/btcsuite/btcd/issues",
+        "org": {
+            "link": "",
+            "name": "btcsuite"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Golang"]
+    },
+
+    "Lightning Loop": {
+        "name": "loop",
+        "description": "",
+        "link": "https://github.com/lightninglabs/loop/issues",
+        "org": {
+            "link": "",
+            "name": "lightninglabs"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Golang"]
+    },
+
+    "RTL": {
+        "name": "RTL",
+        "description": "",
+        "link": "https://github.com/Ride-The-Lightning/RTL/issues",
+        "org": {
+            "link": "",
+            "name": "Ride-The-Lightning"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TypeScript", "JavaScript"]
+    },
+
+    "Mempool": {
+        "name": "mempool",
+        "description": "",
+        "link": "https://github.com/mempool/mempool/issues",
+        "org": {
+            "link": "",
+            "name": "mempool"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TypeScript"]
+    },
+
+    "Elements Project": {
+        "name": "elements",
+        "description": "",
+        "link": "https://github.com/elementsproject/elements/issues",
+        "org": {
+            "link": "",
+            "name": "elementsproject"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["C++", "Python"]
+    },
+
+    "Pyblock": {
+        "name": "pyblock",
+        "description": "",
+        "link": "https://github.com/curly60e/pyblock/issues",
+        "org": {
+            "link": "",
+            "name": "curly60e"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "BitcoinJ": {
+        "name": "bitcoinJ",
+        "description": "",
+        "link": "https://github.com/bitcoinj/bitcoinj/issues",
+        "org": {
+            "link": "",
+            "name": "bitcoinj"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Java"]
+    },
+
+    "Bitbox Wallet App": {
+        "name": "bitbox-wallet-app",
+        "description": "",
+        "link": "https://github.com/digitalbitbox/bitbox-wallet-app/issues",
+        "org": {
+            "link": "",
+            "name": "digitalbitbox"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Golang", "TypeScript"]
+    },
+
+    "Trezor Firmware": {
+        "name": "trezor-firmware",
+        "description": "",
+        "link": "https://github.com/trezor/trezor-firmware/issues",
+        "org": {
+            "link": "",
+            "name": "trezor"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python", "C"]
+    },
+
+    "Join Market": {
+        "name": "joinmarket-clientserver",
+        "description": "",
+        "link": "https://github.com/JoinMarket-Org/joinmarket-clientserver/issues",
+        "org": {
+            "link": "",
+            "name": "JoinMarket-Org"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "Elements Lightning": {
+        "name": "lightning",
+        "description": "",
+        "link": "https://github.com/ElementsProject/lightning/issues",
+        "org": {
+            "link": "",
+            "name": "ElementsProject"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python", "C"]
+    },
+
+    "Lightning Pool": {
+        "name": "pool",
+        "description": "",
+        "link": "https://github.com/lightninglabs/pool/issues",
+        "org": {
+            "link": "",
+            "name": "lightninglabs"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Golang"]
+    },
+
+    "Warden Terminal": {
+        "name": "warden_terminal",
+        "description": "",
+        "link": "https://github.com/pxsocs/warden_terminal/issues",
+        "org": {
+            "link": "",
+            "name": "pxsocs"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python", "TypeScript"]
+    },
+
+    "Robosats": {
+        "name": "robosats",
+        "description": "",
+        "link": "https://github.com/RoboSats/robosats/issues",
+        "org": {
+            "link": "",
+            "name": "RoboSats"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["Python"]
+    },
+
+    "Join Market WebUI": {
+        "name": "jam",
+        "description": "",
+        "link": "https://github.com/joinmarket-webui/jam/issues",
+        "org": {
+            "link": "",
+            "name": "joinmarket-webui"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TypeScript"]
+    },
+
+    "Thunderhub": {
+        "name": "thunderhub",
+        "description": "",
+        "link": "https://github.com/apotdevin/thunderhub/issues",
+        "org": {
+            "link": "",
+            "name": "apotdevin"
+        },
+        "image": "",
+        "tags": [],
+        "metadata": {
+            "twitter": "",
+            "website": ""
+        },
+        "languages": ["TypeScript"]
+    }
+}
