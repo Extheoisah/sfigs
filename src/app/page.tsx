@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { auth } from "./auth"
 import Navigation from "@/components/navigation/Navigation"
 import Main from "@/components/main-content/main"
