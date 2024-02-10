@@ -1,13 +1,17 @@
 import React from "react"
 import style from "./index.module.css"
 import Image from "next/image"
-import { auth } from "@/app/auth"
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
+import { useTheme } from "../contextApi/ThemeContext"
 
-export default async function Navigation() {
-    const session = await auth()
+export default function Navigation({ userInfo }) {
+    const { isDarkMode } = useTheme()
     return (
-        <nav className={style.container}>
+        <nav
+            className={`${style.container} ${
+                isDarkMode ? style.nav_dark : style.nav_light
+            }`}
+        >
             <div className="flex justify-between items-center flex-wrap">
                 <div className="logo">
                     <h1 className="font-bold lg:text-2xl md:text-sm">GFI</h1>
@@ -28,7 +32,7 @@ export default async function Navigation() {
                     <span className="lg:mx-4 mx-1">
                         <picture className="flex w-full md:w-auto items-end justify-end">
                             <Image
-                                src={session?.user.image || "/vercel.svg"}
+                                src={userInfo?.user.image || "/vercel.svg"}
                                 alt="Vercel Logo"
                                 className="rounded-full"
                                 width={48}

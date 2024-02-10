@@ -7,7 +7,7 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
     --nav-bg-color: #F9F6EE;
-    --nav-text-color: #222222;
+    --text-color: #222222;
     --btn-bg: #FFECB8;
     --icon-bg: invert(0%);
     --modal-bg: #FAFAFAE5;
@@ -16,24 +16,34 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-        --nav-bg-color: 255, 255, 255;
-        --nav-text-color: #fff;
-        --btn-bg: #C5C5C5;
-        --icon-bg: invert(100%);
-        --modal-bg: #161616;
-        --modal-links: #2c2c2c;
+        --foreground-rgb-dark: 255, 255, 255;
+        --background-start-rgb-dark: 0, 0, 0;
+        --background-end-rgb-dark: 0, 0, 0;
+        --nav-bg-color-dark: 255, 255, 255;
+        --text-color-dark: #fff;
+        --btn-bg-dark: #C5C5C5;
+        --icon-bg-dark: invert(100%);
+        --modal-bg-dark: #161616;
+        --modal-links-dark: #2c2c2c;
     }
 }
 
 body {
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.dark-mode {
+    color: rgb(var(--foreground-rgb-dark));
+    background: linear-gradient(to bottom,
+            transparent,
+            rgb(var(--background-end-rgb-dark))) rgb(var(--background-start-rgb-dark));
+}
+
+.light-mode {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(to bottom,
             transparent,
             rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-    overflow-x: hidden;
-    width: 100vw;
-    min-height: 100vh;
 }

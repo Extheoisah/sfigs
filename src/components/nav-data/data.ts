@@ -4,7 +4,7 @@ const navigationItems = {
         content: [
             { text: "Javascript", image: "/java-script.svg" },
             { text: "Golang", image: "/go.svg" },
-            { text: "Typescript", image: "/go.svg" },
+            { text: "Typescript", image: "/typescript.svg" },
             { text: "Rust", image: "/rust.svg" }
         ]
     },

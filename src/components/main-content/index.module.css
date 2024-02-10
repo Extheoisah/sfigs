@@ -3,21 +3,40 @@
     justify-content: center;
 }
 
-.icon {
+.icon_light {
     filter: var(--icon-bg);
 }
 
+.icon_dark {
+    filter: var(--icon-bg-dark);
+}
 
-.button {
+
+.button_light {
     background-color: var(--btn-bg);
 }
 
-.modal_links {
-    border-bottom: 1px solid var(--modal-links);
+.button_dark {
+    background-color: var(--btn-bg-dark);
 }
 
-.modal_links:hover {
+.modal_links_light {
+    border-bottom: 1px solid var(--modal-links);
+    color: var(--text-color);
+}
+
+.modal_links_light:hover {
     background-color: var(--modal-links);
+    cursor: pointer;
+}
+
+.modal_links_dark {
+    border-bottom: 1px solid var(--modal-links-dark);
+    color: var(--text-color-dark);
+}
+
+.modal_links_dark:hover {
+    background-color: var(--modal-links-dark);
     cursor: pointer;
 }
 
@@ -38,7 +57,6 @@
 }
 
 .DialogContent {
-    background-color: var(--modal-bg);
     border-radius: 6px;
     box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
     position: fixed;
@@ -50,6 +68,16 @@
     max-height: 85vh;
     padding: 25px;
     animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog_light {
+    background-color: var(--modal-bg);
+    color: var(--text-color);
+}
+
+.dialog_dark {
+    background-color: var(--modal-bg-dark);
+    color: var(--text-color-dark);
 }
 
 .DialogContent:focus {
@@ -93,14 +121,6 @@
     right: 10px;
 }
 
-.IconButton:hover {
-    /* background-color: var(--violet-4); */
-}
-
-.IconButton:focus {
-    /* box-shadow: 0 0 0 2px var(--violet-7); */
-}
-
 .Fieldset {
     display: flex;
     gap: 20px;
@@ -125,13 +145,7 @@
     padding: 0 10px;
     font-size: 15px;
     line-height: 1;
-    /* color: var(--violet-11); */
-    /* box-shadow: 0 0 0 1px var(--violet-7); */
     height: 35px;
-}
-
-.Input:focus {
-    /* box-shadow: 0 0 0 2px var(--violet-8); */
 }
 
 @keyframes overlayShow {

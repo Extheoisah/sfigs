@@ -1,6 +1,14 @@
 .container {
-    background-color: var(--nav-bg-color);
-    color: var(--nav-text-color);
     width: 100vw;
     padding: 1% 2%;
+}
+
+.nav_light {
+    background-color: var(--nav-bg-color);
+    color: var(--text-color);
+}
+
+.nav_dark {
+    background-color: var(--nav-bg-color-dark);
+    color: var(--text-color-dark);
 }
