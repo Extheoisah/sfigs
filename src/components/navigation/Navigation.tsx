@@ -2,7 +2,7 @@ import React from "react"
 import style from "./index.module.css"
 import Image from "next/image"
 import { auth } from "@/app/auth"
-import { ZoomOutIcon } from "@radix-ui/react-icons"
+import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 
 export default async function Navigation() {
     const session = await auth()
@@ -15,7 +15,7 @@ export default async function Navigation() {
                 <div className="flex justify-around items-center">
                     <span className="lg:mx-4 mx-1 flex items-center">
                         <span className="-mr-5 z-20">
-                            <ZoomOutIcon color="gray" />
+                            <MagnifyingGlassIcon color="gray" />
                         </span>
                         <input
                             type="text"

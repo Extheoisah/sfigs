@@ -13,6 +13,7 @@
         "check-code": "yarn prettier:check && yarn lint"
     },
     "dependencies": {
+        "@radix-ui/react-dialog": "^1.0.5",
         "@radix-ui/react-icons": "^1.3.0",
         "next": "14.0.4",
         "next-auth": "^4.24.5",
