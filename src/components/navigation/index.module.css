@@ -12,3 +12,23 @@
     background-color: var(--nav-bg-color-dark);
     color: var(--text-color-dark);
 }
+
+.nav_search{
+    position: static;
+}
+
+@media screen and (max-width: 767px) {
+    .nav_search{
+        position: fixed;
+        top: 2%;
+        left: 0%;
+        transform: translate(50% 50%);
+        margin: 6% 2%;
+        padding: 2% 8%;
+        width: 100%;
+    }
+
+    .nav_search > input{
+        width: 100%;
+    }
+}
