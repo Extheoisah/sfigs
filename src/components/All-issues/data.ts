@@ -14,7 +14,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Typescript-circle.svg",
+                icon: "/Typescript-circle.svg"
             }
         ]
     },
@@ -34,7 +34,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Golang-circle.svg",
+                icon: "/Golang-circle.svg"
             }
         ]
     },
@@ -54,7 +54,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Javascript-circle.svg",
+                icon: "/Javascript-circle.svg"
             }
         ]
     },
@@ -74,7 +74,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Javascript-circle.svg",
+                icon: "/Javascript-circle.svg"
             }
         ]
     },
@@ -94,7 +94,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Typescript-circle.svg",
+                icon: "/Typescript-circle.svg"
             }
         ]
     },
@@ -114,7 +114,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Typescript-circle.svg",
+                icon: "/Typescript-circle.svg"
             }
         ]
     },
@@ -134,7 +134,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Typescript-circle.svg",
+                icon: "/Typescript-circle.svg"
             }
         ]
     },
@@ -154,7 +154,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Typescript-circle.svg",
+                icon: "/Typescript-circle.svg"
             }
         ]
     },
@@ -173,7 +173,47 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Golang-circle.svg",
+                icon: "/Golang-circle.svg"
+            }
+        ]
+    },
+
+    {
+        id: 11,
+        header: "Data Cleaning Required for Inconsistent Time Stamps",
+        company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
+        behaviour_text:
+            "The current navigation menu does not meet accessibility standards, potentially hindering users with disabilities from navigating the website effectively. This issue aims to enhance accessibility by implementing improvements to the navigation menu.",
+        expected_behaviour_text:
+            "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
+        labels: ["wallet", "open-source", "tools"],
+        labels2: [
+            {
+                language: "Golang",
+                number: 17,
+                chat: { chat_number: 25, chat_icons: "/chat.svg" },
+                last_updated: "updated 3days ago",
+                icon: "/Golang-circle.svg"
+            }
+        ]
+    },
+
+    {
+        id: 12,
+        header: "Data Cleaning Required for Inconsistent Time Stamps",
+        company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
+        behaviour_text:
+            "The current navigation menu does not meet accessibility standards, potentially hindering users with disabilities from navigating the website effectively. This issue aims to enhance accessibility by implementing improvements to the navigation menu.",
+        expected_behaviour_text:
+            "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
+        labels: ["wallet", "open-source", "tools"],
+        labels2: [
+            {
+                language: "Golang",
+                number: 17,
+                chat: { chat_number: 25, chat_icons: "/chat.svg" },
+                last_updated: "updated 3days ago",
+                icon: "/Golang-circle.svg"
             }
         ]
     }

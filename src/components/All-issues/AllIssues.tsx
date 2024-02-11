@@ -7,7 +7,6 @@ import { CircleIcon, DiscIcon } from "@radix-ui/react-icons"
 import { useEffect, useState } from "react"
 
 export default function AllIssues(props) {
-
     const { isDarkMode } = useTheme()
     const [expandText, setExpandText] = useState<boolean[]>([])
 
@@ -44,18 +43,20 @@ export default function AllIssues(props) {
         if (props.searchParams.type !== "") {
             filtered = filtered.filter((item) =>
                 item.labels.some(
-                    (el) => el.toLowerCase() === props.searchParams.type.toLowerCase()
+                    (el) =>
+                        el.toLowerCase() ===
+                        props.searchParams.type.toLowerCase()
                 )
             )
         }
 
         props.setIssueList(filtered)
+        props.setCurrentPage(1)
     }
 
     useEffect(() => {
         filter()
-        console.log(props.issueList);
-        
+        console.log(props.issueList)
     }, [props.searchParams])
 
     return (
@@ -64,7 +65,7 @@ export default function AllIssues(props) {
                 isDarkMode ? style.issues_dark : style.issues_light
             }`}
         >
-            {props.issueList.map((item, index) => (
+            {props.visibleIssues.map((item, index) => (
                 <a
                     key={item.id}
                     className={`${style.issues_item} my-6 w-full block`}

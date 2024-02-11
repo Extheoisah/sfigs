@@ -13,6 +13,7 @@
     --modal-bg: #FAFAFAE5;
     --modal-links: #898989;
     --issues-text-color: #939393;
+    --footer-text-color: #FFECB8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +28,7 @@
         --modal-bg-dark: #161616;
         --modal-links-dark: #2c2c2c;
         --issues-text-color-dark: #4e4e4e;
+        --footer-text-color-dark: #FAFAFA66;
     }
 }
 

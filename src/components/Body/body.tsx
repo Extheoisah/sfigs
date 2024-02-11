@@ -35,6 +35,20 @@ export default function Body(props) {
         }[]
     }
     const [renderIssues, setRenderIssues] = useState<Issue[]>([])
+
+    const [currentPage, setCurrentPage] = useState(1)
+    const itemsPerPage = 10
+
+    const startIndex = (currentPage - 1) * itemsPerPage
+    const endIndex = startIndex + itemsPerPage
+    const visibleIssues = renderIssues.slice(startIndex, endIndex)
+
+    const totalPages = Math.ceil(renderIssues.length / itemsPerPage)
+
+    const handlePageChange = (page) => {
+        setCurrentPage(page)
+    }
+
     const [open, setOpen] = useState(false)
     const [selectedNavItem, setSelectedNavItem] = useState(null)
     const [searchFilter, setSearchFilter] = useState({
@@ -79,7 +93,7 @@ export default function Body(props) {
 
     return (
         <>
-         <Navigation userInfo={props.sessionInfo} data={props.issues} />
+            <Navigation userInfo={props.sessionInfo} data={props.issues} />
             <div className={`${style.container} mt-5 px-4 w-full py-4`}>
                 <div className="lg:w-3/4">
                     <h1 className="text-2xl">Open Source Projects</h1>
@@ -236,6 +250,8 @@ export default function Body(props) {
                         issues={props.data}
                         issueList={renderIssues}
                         setIssueList={setRenderIssues}
+                        setCurrentPage={setCurrentPage}
+                        visibleIssues={visibleIssues}
                     />
                 </div>
             </div>
@@ -243,6 +259,9 @@ export default function Body(props) {
                 issues={props.data}
                 issueList={renderIssues}
                 setIssueList={setRenderIssues}
+                totalPages={totalPages}
+                changePage={handlePageChange}
+                currentPage={currentPage}
             />
         </>
     )
