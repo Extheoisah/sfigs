@@ -1,0 +1,43 @@
+.issues_container {
+    border: 1px solid var(--btn-bg-dark);
+    margin: 2% 0;
+}
+
+.issues_dark {
+    color: var(--issues-text-color-dark);
+}
+
+.issues_light {
+    color: var(--issues-text-color);
+}
+
+.issues_item {
+    border-bottom: 1px solid var(--btn-bg-dark);
+    padding: 2% 2%;
+}
+
+.issues_item:last-child {
+    border-bottom: none;
+}
+
+.issues_button_dark {
+    background-color: var(--btn-bg-dark);
+    color: var(--text-color-dark);
+    padding: 1% 2%;
+    border-radius: 1rem;
+}
+
+.issues_button_light {
+    background-color: var(--btn-bg-dark);
+    color: var(--text-color);
+    padding: 1% 2%;
+    border-radius: 1rem;
+}
+
+.header_light {
+    color: var(--text-color);
+}
+
+.header_dark {
+    color: var(--text-color-dark);
+}

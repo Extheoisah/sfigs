@@ -7,7 +7,7 @@ export default function Main({ sessionInfo }) {
     const { isDarkMode } = useTheme()
     return (
         <>
-            <section className={`${isDarkMode ? "dark-mode" : "light-mode"} min-h-screen`}>
+            <section className={`${isDarkMode ? "dark-mode" : "light-mode"} min-h-screen w-screen`}>
                 <Navigation userInfo={sessionInfo} />
                 <Body />
             </section>

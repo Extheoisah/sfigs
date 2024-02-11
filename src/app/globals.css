@@ -12,6 +12,7 @@
     --icon-bg: invert(0%);
     --modal-bg: #FAFAFAE5;
     --modal-links: #898989;
+    --issues-text-color: #939393;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +26,7 @@
         --icon-bg-dark: invert(100%);
         --modal-bg-dark: #161616;
         --modal-links-dark: #2c2c2c;
+        --issues-text-color-dark: #4e4e4e;
     }
 }
 
@@ -43,7 +45,8 @@ body {
 
 .light-mode {
     color: rgb(var(--foreground-rgb));
-    background: linear-gradient(to bottom,
+    background: var(--text-color-dark);
+    /* background: linear-gradient(to bottom,
             transparent,
-            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
 }
