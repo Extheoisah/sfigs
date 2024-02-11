@@ -1,33 +1,15 @@
 "use-client"
-import issues from "./data"
+// import issues from "./data"
 import style from "./index.module.css"
 import { useTheme } from "../contextApi/ThemeContext"
 import Image from "next/image"
 import { CircleIcon, DiscIcon } from "@radix-ui/react-icons"
 import { useEffect, useState } from "react"
 
-export default function AllIssues({ searchParams }) {
-    interface Issue {
-        id: number
-        header: string
-        company: { smallIcon: string; name: string }
-        behaviour_text: string
-        expected_behaviour_text: string
-        labels: string[]
-        labels2: {
-            language: string
-            number: number
-            chat: {
-                /*...*/
-            }
-            last_updated: string
-            icon: string
-        }[]
-    }
+export default function AllIssues(props) {
 
     const { isDarkMode } = useTheme()
     const [expandText, setExpandText] = useState<boolean[]>([])
-    const [renderIssues, setRenderIssues] = useState<Issue[]>([])
 
     const handleReadMorebtnClick = (index: number) => {
         setExpandText((prev) => [
@@ -39,46 +21,42 @@ export default function AllIssues({ searchParams }) {
 
     // dummy filter feature to be updated with real endpoint
     const filter = () => {
-        let filtered = issues
+        let filtered = props.issueList
 
-        if (searchParams.language !== "") {
+        if (props.searchParams.language !== "") {
             filtered = filtered.filter((item) =>
                 item.labels2.some(
                     (el) =>
                         el.language.toLowerCase() ===
-                        searchParams.language.toLowerCase()
+                        props.searchParams.language.toLowerCase()
                 )
             )
         }
 
-        if (searchParams.organisation !== "") {
+        if (props.searchParams.organisation !== "") {
             filtered = filtered.filter(
                 (item) =>
                     item.company.name.toLocaleLowerCase() ===
-                    searchParams.organisation.toLowerCase()
+                    props.searchParams.organisation.toLowerCase()
             )
         }
 
-        if (searchParams.type !== "") {
+        if (props.searchParams.type !== "") {
             filtered = filtered.filter((item) =>
                 item.labels.some(
-                    (el) => el.toLowerCase() === searchParams.type.toLowerCase()
+                    (el) => el.toLowerCase() === props.searchParams.type.toLowerCase()
                 )
             )
         }
 
-        setRenderIssues(filtered)
+        props.setIssueList(filtered)
     }
 
     useEffect(() => {
-        setRenderIssues(issues)
-    }, [])
-
-    useEffect(() => {
         filter()
-        console.log(renderIssues);
+        console.log(props.issueList);
         
-    }, [searchParams])
+    }, [props.searchParams])
 
     return (
         <div
@@ -86,7 +64,7 @@ export default function AllIssues({ searchParams }) {
                 isDarkMode ? style.issues_dark : style.issues_light
             }`}
         >
-            {renderIssues.map((item, index) => (
+            {props.issueList.map((item, index) => (
                 <a
                     key={item.id}
                     className={`${style.issues_item} my-6 w-full block`}

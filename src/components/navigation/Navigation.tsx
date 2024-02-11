@@ -4,7 +4,7 @@ import Image from "next/image"
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 import { useTheme } from "../contextApi/ThemeContext"
 
-export default function Navigation({ userInfo }) {
+export default function Navigation(props) {
     const { isDarkMode } = useTheme()
     return (
         <nav
@@ -32,7 +32,7 @@ export default function Navigation({ userInfo }) {
                     <span className="lg:mx-4 mx-1">
                         <picture className="flex w-full md:w-auto items-end justify-end">
                             <Image
-                                src={userInfo?.user.image || "/vercel.svg"}
+                                src={props.userInfo?.user.image || "/vercel.svg"}
                                 alt="Vercel Logo"
                                 className="rounded-full"
                                 width={48}

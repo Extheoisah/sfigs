@@ -13,8 +13,28 @@ import navigationItems from "../nav-data/data"
 import { useTheme } from "../contextApi/ThemeContext"
 import { useEffect, useState } from "react"
 import AllIssues from "../All-issues/AllIssues"
+import Navigation from "../navigation/Navigation"
+import Footer from "../footer/footer"
 
-export default function Body() {
+export default function Body(props) {
+    interface Issue {
+        id: number
+        header: string
+        company: { smallIcon: string; name: string }
+        behaviour_text: string
+        expected_behaviour_text: string
+        labels: string[]
+        labels2: {
+            language: string
+            number: number
+            chat: {
+                /*...*/
+            }
+            last_updated: string
+            icon: string
+        }[]
+    }
+    const [renderIssues, setRenderIssues] = useState<Issue[]>([])
     const [open, setOpen] = useState(false)
     const [selectedNavItem, setSelectedNavItem] = useState(null)
     const [searchFilter, setSearchFilter] = useState({
@@ -53,12 +73,13 @@ export default function Body() {
         }))
     }
 
-    // useEffect(() => {
-    //     console.log(searchFilter)
-    // }, [searchFilter])
+    useEffect(() => {
+        setRenderIssues(props.data)
+    }, [])
 
     return (
         <>
+         <Navigation userInfo={props.sessionInfo} data={props.issues} />
             <div className={`${style.container} mt-5 px-4 w-full py-4`}>
                 <div className="lg:w-3/4">
                     <h1 className="text-2xl">Open Source Projects</h1>
@@ -210,9 +231,19 @@ export default function Body() {
                             </button>
                         </div>
                     </nav>
-                    <AllIssues searchParams={searchFilter} />
+                    <AllIssues
+                        searchParams={searchFilter}
+                        issues={props.data}
+                        issueList={renderIssues}
+                        setIssueList={setRenderIssues}
+                    />
                 </div>
             </div>
+            <Footer
+                issues={props.data}
+                issueList={renderIssues}
+                setIssueList={setRenderIssues}
+            />
         </>
     )
 }
