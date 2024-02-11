@@ -11,12 +11,18 @@ import * as Dialog from "@radix-ui/react-dialog"
 import style from "../main-content/index.module.css"
 import navigationItems from "../nav-data/data"
 import { useTheme } from "../contextApi/ThemeContext"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import AllIssues from "../All-issues/AllIssues"
 
 export default function Body() {
     const [open, setOpen] = useState(false)
     const [selectedNavItem, setSelectedNavItem] = useState(null)
+    const [searchFilter, setSearchFilter] = useState({
+        language: "",
+        organisation: "",
+        type: "",
+        recent: ""
+    })
     const { isDarkMode, toggleDarkMode } = useTheme()
 
     const handleClick = (key: any) => {
@@ -25,9 +31,31 @@ export default function Body() {
     }
 
     // retrieve text of links clicked on popup modal
-    const handleModalLinksClick = (item: string): string => {
-        return item
+    const handleModalLinksClick = (item) => {
+        const languages = ["Golang", "Javascript", "Typescript", "Rust"]
+        const organisations = ["Galoy", "Chainlab", "Aremxy Plug", "Btrust"]
+        const types = ["P2p", "Wallet", "Tools", "Education"]
+        const recent = [
+            "Newest",
+            "Oldest",
+            "Recently updated",
+            "Last recently updated"
+        ]
+
+        setSearchFilter((prev) => ({
+            ...prev,
+            language: languages.includes(item.text) ? item.text : prev.language,
+            organisation: organisations.includes(item.text)
+                ? item.text
+                : prev.organisation,
+            type: types.includes(item.text) ? item.text : prev.type,
+            recent: recent.includes(item.text) ? item.text : prev.recent
+        }))
     }
+
+    // useEffect(() => {
+    //     console.log(searchFilter)
+    // }, [searchFilter])
 
     return (
         <>
@@ -182,7 +210,7 @@ export default function Body() {
                             </button>
                         </div>
                     </nav>
-                    <AllIssues />
+                    <AllIssues searchParams={searchFilter} />
                 </div>
             </div>
         </>
