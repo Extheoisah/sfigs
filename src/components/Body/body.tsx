@@ -164,6 +164,7 @@ export default function Body(props) {
                                                                         <input
                                                                             type="text"
                                                                             id="search"
+                                                                            autoFocus
                                                                             placeholder={
                                                                                 key
                                                                             }

@@ -169,6 +169,13 @@
         transform: translate(-50%, -50%) scale(1);
     }
 }
+.nav_item_container{
+    position: relative;
+}
+
+.toggle_btn{
+    position: static;
+}
 
 @media screen and (max-width: 1023px) {
     .DialogContent {
@@ -179,17 +186,10 @@
     }
 }
 
-.nav_item_container{
-    position: relative;
-}
-
-.toggle_btn{
-    position: static;
-}
 
 @media screen and (max-width: 767px) {
     .DialogContent {
-        top: 38%;
+        top: 50%;
         max-width: 450px;
         max-height: auto;
     }
