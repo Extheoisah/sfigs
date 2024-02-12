@@ -179,10 +179,34 @@
     }
 }
 
+.nav_item_container{
+    position: relative;
+}
+
+.toggle_btn{
+    position: static;
+}
+
 @media screen and (max-width: 767px) {
     .DialogContent {
         top: 38%;
         max-width: 450px;
         max-height: auto;
+    }
+
+    .toggle_btn{
+        position: absolute;
+        top: 1.5%;
+        right: 4%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .h1{
+        font-size: 0.8rem;
+    }
+
+    .toggle_btn{
+        top: 1.2%;
     }
 }

@@ -89,7 +89,7 @@ export default function AllIssues(props) {
                         </span>
                     </div>
 
-                    <div className="my-2 lg:max-w-screen-lg md:max-w-screen-md max-w-xs  overflow-hidden">
+                    <div className={`${style.truncate_container} my-2 lg:max-w-screen-lg md:max-w-screen-md max-w-xs  overflow-hidden`}>
                         <div
                             className={`${
                                 !expandText[index]
@@ -106,7 +106,7 @@ export default function AllIssues(props) {
                             >
                                 {item.behaviour_text}
                             </p>
-                            <span className="flex items-center">
+                            <span className="flex items-center flex-wrap">
                                 <button
                                     className="whitespace-nowrap mt-2"
                                     onClick={() =>
@@ -135,8 +135,8 @@ export default function AllIssues(props) {
 
                     <div className="flex items-center mt-4">
                         {item.labels2.map((label, i) => (
-                            <div key={i} className="flex">
-                                <span className="flex items-center">
+                            <div key={i} className="flex flex-wrap">
+                                <span className="flex lg:text-lg text-sm items-center">
                                     <Image
                                         src={label.icon}
                                         width={20}
@@ -148,12 +148,12 @@ export default function AllIssues(props) {
                                     </span>
                                 </span>
 
-                                <span className="flex items-center mx-2">
+                                <span className="flex lg:text-lg text-sm items-center mx-2">
                                     <DiscIcon className="mx-1" />
                                     {label.number}
                                 </span>
 
-                                <span className="flex items-center mx-2">
+                                <span className="flex lg:text-lg text-sm items-center mx-2">
                                     <Image
                                         src={label.chat.chat_icons}
                                         alt="chat"
@@ -164,7 +164,7 @@ export default function AllIssues(props) {
                                     {label.chat.chat_number}
                                 </span>
 
-                                <span className="mx-2">
+                                <span className="lg:text-lg text-sm mx-2">
                                     {label.last_updated}
                                 </span>
                             </div>

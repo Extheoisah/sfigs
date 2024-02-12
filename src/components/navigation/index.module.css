@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 767px) {
     .nav_search{
-        position: fixed;
+        position: absolute;
         top: 2%;
         left: 0%;
         transform: translate(50% 50%);
