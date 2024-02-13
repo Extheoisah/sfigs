@@ -798,8 +798,9 @@ const issues = [
         ]
     },
 
+    // from here
     {
-        id: 12,
+        id: 42,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -819,7 +820,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 43,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -839,7 +840,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 44,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -859,7 +860,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 45,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -879,7 +880,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 46,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -899,7 +900,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 47,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -919,7 +920,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 48,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -939,7 +940,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 49,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -959,7 +960,7 @@ const issues = [
     },
 
     {
-        id: 12,
+        id: 50,
         header: "Data Cleaning Required for Inconsistent Time Stamps",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:
@@ -978,8 +979,9 @@ const issues = [
         ]
     },
 
+    // to here 👇
     {
-        id: 60,
+        id: 51,
         header: "Mobile Responsive Design Bug on Product Page",
         company: { smallIcon: "/small-icon.svg", name: "cryptonie" },
         behaviour_text:

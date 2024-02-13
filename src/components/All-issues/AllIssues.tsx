@@ -18,47 +18,6 @@ export default function AllIssues(props) {
         ])
     }
 
-    // dummy filter feature to be updated with real endpoint
-    const filter = () => {
-        let filtered = props.issueList
-
-        if (props.searchParams.language !== "") {
-            filtered = filtered.filter((item) =>
-                item.labels2.some(
-                    (el) =>
-                        el.language.toLowerCase() ===
-                        props.searchParams.language.toLowerCase()
-                )
-            )
-        }
-
-        if (props.searchParams.organisation !== "") {
-            filtered = filtered.filter(
-                (item) =>
-                    item.company.name.toLocaleLowerCase() ===
-                    props.searchParams.organisation.toLowerCase()
-            )
-        }
-
-        if (props.searchParams.type !== "") {
-            filtered = filtered.filter((item) =>
-                item.labels.some(
-                    (el) =>
-                        el.toLowerCase() ===
-                        props.searchParams.type.toLowerCase()
-                )
-            )
-        }
-
-        props.setIssueList(filtered)
-        props.setCurrentPage(1)
-    }
-
-    useEffect(() => {
-        filter()
-        console.log(props.issueList)
-    }, [props.searchParams])
-
     return (
         <div
             className={`${style.issues_container} ${

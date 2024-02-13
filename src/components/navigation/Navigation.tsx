@@ -1,11 +1,87 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import style from "./index.module.css"
 import Image from "next/image"
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 import { useTheme } from "../contextApi/ThemeContext"
+import { useEffect } from "react"
 
 export default function Navigation(props) {
     const { isDarkMode } = useTheme()
+    const inputRef = useRef<HTMLInputElement>(null)
+
+    const [navInput, setNavInput] = useState({ search: "" })
+
+    const handleNavSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target
+        setNavInput((prev: any) => ({ ...prev, [name]: value }))
+    }
+
+    const enter_keyAction = (item) => {
+        const languages = ["Golang", "Javascript", "Typescript", "Rust"]
+        const organisations = ["Galoy", "Chainlab", "Aremxy Plug", "Btrust"]
+        const types = ["P2p", "Wallet", "Tools", "Education"]
+        const recent = [
+            "Newest",
+            "Oldest",
+            "Recently updated",
+            "Last recently updated"
+        ]
+
+        navInput.search = item
+        let filtered = props.issueList
+        setNavInput((prev) => ({ ...prev, search: "" }))
+        if (item !== "" || item !== undefined) {
+            const searchByLanguage = languages.filter(
+                (searchItem) => searchItem.toLowerCase()=== item.toLowerCase()
+            )
+            const searchByOrganisations = organisations.filter(
+                (searchItem) => searchItem.toLowerCase() === item.toLowerCase()
+            )
+            const searchByTypes = types.filter(
+                (searchItem) => searchItem.toLowerCase() === item.toLowerCase()
+            )
+            const searchByRecent = recent.filter(
+                (searchItem) => searchItem.toLowerCase() === item.toLowerCase()
+            )
+
+            if (searchByLanguage) {
+                props.setSearchParams((prev) => ({
+                    ...prev,
+                    language: searchByLanguage.toString()
+                }))
+            }
+
+            if (searchByOrganisations) {
+                props.setSearchParams((prev) => ({
+                    ...prev,
+                    organisation: searchByOrganisations.toString()
+                }))
+            }
+
+            if (searchByTypes) {
+                props.setSearchParams((prev) => ({
+                    ...prev,
+                    type: searchByTypes.toString()
+                }))
+            }
+
+            if (searchByRecent) {
+                props.setSearchParams((prev) => ({
+                    ...prev,
+                    recent: searchByRecent.toString()
+                }))
+            }
+        }
+    }
+
+    useEffect(() => {
+        if (inputRef?.current) {
+            inputRef.current.addEventListener("keypress", (e) => {
+                if (e.key === "Enter") enter_keyAction(navInput.search)
+            })
+        }
+    }, [navInput.search])
+
     return (
         <nav
             className={`${style.container} ${
@@ -17,22 +93,29 @@ export default function Navigation(props) {
                     <h1 className="font-bold lg:text-2xl md:text-sm">GFI</h1>
                 </div>
                 <div className="flex justify-around items-center">
-                    <span className={`${style.nav_search} lg:mx-4 mx-1 flex items-center`}>
+                    <span
+                        className={`${style.nav_search} lg:mx-4 mx-1 flex items-center`}
+                    >
                         <span className="-mr-5 z-20">
                             <MagnifyingGlassIcon color="gray" />
                         </span>
                         <input
+                            ref={inputRef}
                             type="text"
-                            name=""
+                            name="search"
                             id=""
                             placeholder="Search..."
-                            className="px-6 py-1 rounded-md"
+                            className="px-6 py-1 rounded-md text-black"
+                            onChange={handleNavSearch}
+                            value={navInput.search}
                         />
                     </span>
                     <span className="lg:mx-4 mx-1">
                         <picture className="flex w-full md:w-auto items-end justify-end">
                             <Image
-                                src={props.userInfo?.user.image || "/vercel.svg"}
+                                src={
+                                    props.userInfo?.user.image || "/vercel.svg"
+                                }
                                 alt="Vercel Logo"
                                 className="rounded-full"
                                 width={48}
