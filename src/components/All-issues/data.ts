@@ -453,7 +453,7 @@ const issues = [
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
-                icon: "/Javascipt-circle.svg"
+                icon: "/Javascript-circle.svg"
             }
         ]
     },
@@ -1051,7 +1051,7 @@ const issues = [
         labels: ["wallet", "open-source", "tools"],
         labels2: [
             {
-                language: "Javscript",
+                language: "Javascript",
                 number: 17,
                 chat: { chat_number: 25, chat_icons: "/chat.svg" },
                 last_updated: "updated 3days ago",
