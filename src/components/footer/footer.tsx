@@ -2,7 +2,24 @@
 import { useTheme } from "../contextApi/ThemeContext"
 import style from "./index.module.css"
 
-export default function Footer(props) {
+interface FooterProps {
+    setSearchParams: React.Dispatch<React.SetStateAction<any>>
+    issueList: Array<any>
+    issues: Array<any>
+    setIssueList: React.Dispatch<React.SetStateAction<any>>
+    currentPage: number
+    totalPages: number
+    setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    searchParams: {
+        language: string
+        organisation: string
+        type: string
+        recent: string
+    }
+    changePage: (page: number) => void
+}
+
+export default function Footer(props: FooterProps) {
     const { isDarkMode } = useTheme()
 
     const isSmallScreen = window.innerWidth <= 767
@@ -40,9 +57,10 @@ export default function Footer(props) {
                                 &lt; Previous
                             </button>
                         )}
-                        {[...Array(endPage - startPage + 1).keys()].map(
-                            (offset) => {
-                                const page = startPage + offset
+                        {Array.from(
+                            { length: endPage - startPage + 1 },
+                            (_, index) => {
+                                const page = startPage + index
                                 return (
                                     <a
                                         className={`mx-2 px-2 ${
@@ -64,6 +82,7 @@ export default function Footer(props) {
                                 )
                             }
                         )}
+
                         {shouldShowNextButton && (
                             <button
                                 className={`px-4 ${

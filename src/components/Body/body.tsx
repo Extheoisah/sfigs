@@ -6,7 +6,22 @@ import Navigation from "../navigation/Navigation"
 import Footer from "../footer/footer"
 import Small_nav from "../small_navigation/small_nav"
 
-export default function Body(props) {
+interface BodyProps {
+    sessionInfo: any
+    data: any[]
+}
+
+export default function Body(props: BodyProps) {
+    interface Labels2Element {
+        language: string
+        number: number
+        chat: {
+            chat_number: number
+            chat_icons: string
+        }
+        last_updated: string
+        icon: string
+    }
     interface Issue {
         id: number
         header: string
@@ -18,7 +33,8 @@ export default function Body(props) {
             language: string
             number: number
             chat: {
-                /*...*/
+                chat_number: number
+                chat_icons: string
             }
             last_updated: string
             icon: string
@@ -35,7 +51,7 @@ export default function Body(props) {
 
     const totalPages = Math.ceil(renderIssues.length / itemsPerPage)
 
-    const handlePageChange = (page) => {
+    const handlePageChange = (page: number) => {
         setCurrentPage(page)
     }
     const [searchFilter, setSearchFilter] = useState({
@@ -52,7 +68,7 @@ export default function Body(props) {
         if (searchFilter?.language !== "") {
             filtered = filtered?.filter((item) =>
                 item.labels2.some(
-                    (el) =>
+                    (el: Labels2Element) =>
                         el.language?.toLowerCase() ===
                         searchFilter?.language?.toLowerCase()
                 )
@@ -70,7 +86,7 @@ export default function Body(props) {
         if (searchFilter.type !== "") {
             filtered = filtered?.filter((item) =>
                 item.labels.some(
-                    (el) =>
+                    (el: string) =>
                         el.toLowerCase() === searchFilter?.type?.toLowerCase()
                 )
             )
@@ -127,6 +143,7 @@ export default function Body(props) {
                         searchParams={searchFilter}
                         issues={props.data}
                         issueList={renderIssues}
+                        setSearchParams={setSearchFilter}
                         setIssueList={setRenderIssues}
                         setCurrentPage={setCurrentPage}
                         visibleIssues={visibleIssues}
@@ -134,12 +151,15 @@ export default function Body(props) {
                 </div>
             </div>
             <Footer
-                issues={props.data}
+                searchParams={searchFilter}
+                setSearchParams={setSearchFilter}
                 issueList={renderIssues}
+                issues={props.data}
                 setIssueList={setRenderIssues}
-                totalPages={totalPages}
-                changePage={handlePageChange}
                 currentPage={currentPage}
+                totalPages={totalPages}
+                setCurrentPage={setCurrentPage}
+                changePage={handlePageChange}
             />
         </>
     )

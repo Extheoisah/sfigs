@@ -11,9 +11,21 @@ import {
     MoonIcon,
     Cross2Icon
 } from "@radix-ui/react-icons"
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, ChangeEvent } from "react"
 
-export default function Small_nav(props) {
+interface SmallNavProps {
+    setSearchParams: React.Dispatch<React.SetStateAction<any>>
+    issueList: Array<any>
+    setIssueList: React.Dispatch<React.SetStateAction<any>>
+    searchParams: {
+        language: string
+        organisation: string
+        type: string
+        recent: string
+    }
+}
+
+export default function Small_nav(props: SmallNavProps) {
     const { isDarkMode, toggleDarkMode } = useTheme()
     const [selectedNavItem, setSelectedNavItem] = useState(null)
     const [modalInput, setModalInput] = useState({ search: "" })
@@ -40,9 +52,21 @@ export default function Small_nav(props) {
         "Last recently updated"
     ]
 
+    interface ModalLinksItem {
+        text: string
+        image?: string
+    }
+
+    interface PrevType {
+        language: string
+        organisation: string
+        type: string
+        recent: string
+    }
+
     // retrieve text of links clicked on popup modal
-    const handleModalLinksClick = (item) => {
-        props.setSearchParams((prev) => ({
+    const handleModalLinksClick = (item: ModalLinksItem) => {
+        props.setSearchParams((prev: PrevType) => ({
             ...prev,
             language: languages.includes(item.text) ? item.text : prev.language,
             organisation: organisations.includes(item.text)
@@ -53,7 +77,7 @@ export default function Small_nav(props) {
         }))
     }
 
-    const enter_keyAction = (item) => {
+    const enter_keyAction = (item: string) => {
         modalInput.search = item
         let filtered = props.issueList
         setModalInput((prev) => ({ ...prev, search: "" }))
@@ -72,28 +96,28 @@ export default function Small_nav(props) {
             )
 
             if (searchByLanguage && selectedNavItem === "language") {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: PrevType) => ({
                     ...prev,
                     language: searchByLanguage.toString()
                 }))
             }
 
             if (searchByOrganisations && selectedNavItem === "organisation") {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: PrevType) => ({
                     ...prev,
                     organisation: searchByOrganisations.toString()
                 }))
             }
 
             if (searchByTypes && selectedNavItem === "type") {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: PrevType) => ({
                     ...prev,
                     type: searchByTypes.toString()
                 }))
             }
 
             if (searchByRecent && selectedNavItem === "recent") {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: PrevType) => ({
                     ...prev,
                     recent: searchByRecent.toString()
                 }))
@@ -102,7 +126,7 @@ export default function Small_nav(props) {
         setOpen(false)
     }
 
-    const handleModalInputChange = (e) => {
+    const handleModalInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target
         setModalInput((prev) => ({ ...prev, [name]: value }))
     }

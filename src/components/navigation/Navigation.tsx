@@ -5,7 +5,28 @@ import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 import { useTheme } from "../contextApi/ThemeContext"
 import { useEffect } from "react"
 
-export default function Navigation(props) {
+interface NavProps {
+    setSearchParams: React.Dispatch<React.SetStateAction<any>>
+    issueList: Array<any>
+    userInfo: {
+        user: {
+            name: string
+            email: string
+            image: string
+        }
+    }
+    issues: Array<any>
+    setIssueList: React.Dispatch<React.SetStateAction<any>>
+    setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    searchParams: {
+        language: string
+        organisation: string
+        type: string
+        recent: string
+    }
+}
+
+export default function Navigation(props: NavProps) {
     const { isDarkMode } = useTheme()
     const inputRef = useRef<HTMLInputElement>(null)
 
@@ -16,7 +37,7 @@ export default function Navigation(props) {
         setNavInput((prev: any) => ({ ...prev, [name]: value }))
     }
 
-    const enter_keyAction = (item) => {
+    const enter_keyAction = (item: string) => {
         const languages = ["Golang", "Javascript", "Typescript", "Rust"]
         const organisations = ["Galoy", "Chainlab", "Aremxy Plug", "Btrust"]
         const types = ["P2p", "Wallet", "Tools", "Education"]
@@ -45,28 +66,28 @@ export default function Navigation(props) {
             )
 
             if (searchByLanguage) {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: Array<string>) => ({
                     ...prev,
                     language: searchByLanguage.toString()
                 }))
             }
 
             if (searchByOrganisations) {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: Array<string>) => ({
                     ...prev,
                     organisation: searchByOrganisations.toString()
                 }))
             }
 
             if (searchByTypes) {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: Array<string>) => ({
                     ...prev,
                     type: searchByTypes.toString()
                 }))
             }
 
             if (searchByRecent) {
-                props.setSearchParams((prev) => ({
+                props.setSearchParams((prev: Array<string>) => ({
                     ...prev,
                     recent: searchByRecent.toString()
                 }))

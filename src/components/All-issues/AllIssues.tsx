@@ -7,7 +7,52 @@ import * as Dialog from "@radix-ui/react-dialog"
 import { DiscIcon } from "@radix-ui/react-icons"
 import { useState } from "react"
 
-export default function AllIssues(props) {
+interface AllIssuesProps {
+    setSearchParams: React.Dispatch<React.SetStateAction<any>>
+    issueList: Array<any>
+    issues: Array<any>
+    visibleIssues: Array<any>
+    setIssueList: React.Dispatch<React.SetStateAction<any>>
+    setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    searchParams: {
+        language: string
+        organisation: string
+        type: string
+        recent: string
+    }
+}
+
+interface Label2 {
+    language: string
+    number: number
+    chat: {
+        chat_number: number
+        chat_icons: string
+    }
+    last_updated: string
+    icon: string
+}
+
+interface VisibleIssues {
+    id: number
+    header: string
+    company: { smallIcon: string; name: string }
+    behaviour_text: string
+    expected_behaviour_text: string
+    labels: string[]
+    labels2: {
+        language: string
+        number: number
+        chat: {
+            chat_number: number
+            chat_icons: string
+        }
+        last_updated: string
+        icon: string
+    }[]
+}
+
+export default function AllIssues(props: AllIssuesProps) {
     const { isDarkMode } = useTheme()
     const [expandText, setExpandText] = useState<boolean[]>([])
 
@@ -25,7 +70,7 @@ export default function AllIssues(props) {
                 isDarkMode ? style.issues_dark : style.issues_light
             }`}
         >
-            {props.visibleIssues.map((item, index) => (
+            {props.visibleIssues.map((item: VisibleIssues, index: number) => (
                 <a
                     key={item.id}
                     className={`${style.issues_item} my-6 w-full block`}
