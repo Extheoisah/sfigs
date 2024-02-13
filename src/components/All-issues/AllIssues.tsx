@@ -1,17 +1,15 @@
 "use-client"
-// import issues from "./data"
 import style from "./index.module.css"
 import style2 from "../main-content/general.module.css"
 import { useTheme } from "../contextApi/ThemeContext"
 import Image from "next/image"
 import * as Dialog from "@radix-ui/react-dialog"
 import { DiscIcon } from "@radix-ui/react-icons"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export default function AllIssues(props) {
     const { isDarkMode } = useTheme()
     const [expandText, setExpandText] = useState<boolean[]>([])
-    const [openModal, setOpenModal] = useState(false)
 
     const handleReadMorebtnClick = (index: number) => {
         setExpandText((prev) => [
@@ -19,10 +17,6 @@ export default function AllIssues(props) {
             !prev[index],
             ...prev.slice(index + 1)
         ])
-    }
-
-    const handleModalClose = () => {
-        setOpenModal(false)
     }
 
     return (
@@ -117,14 +111,6 @@ export default function AllIssues(props) {
                                                 </p>
                                             </div>
                                         </div>
-                                        {/* <Dialog.Close asChild>
-                                            <button
-                                                className={`${style.IconButton}`}
-                                                aria-label="Close"
-                                            >
-                                                <Cross2Icon />
-                                            </button>
-                                        </Dialog.Close> */}
                                     </Dialog.Content>
                                 </Dialog.Portal>
                             </Dialog.Root>

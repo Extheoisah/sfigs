@@ -48,7 +48,4 @@ body {
 .light-mode {
     color: rgb(var(--foreground-rgb));
     background: var(--text-color-dark);
-    /* background: linear-gradient(to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
 }
