@@ -22,7 +22,6 @@ export default function Small_nav(props) {
     const handleClick = (key: any) => {
         setOpen(!open)
         setSelectedNavItem(key)
-        console.log(selectedNavItem)
     }
 
     const handleModalClose = () => {
@@ -99,10 +98,7 @@ export default function Small_nav(props) {
                 }))
             }
         }
-    }
-
-    const findModalType = (item) => {
-        console.log(item)
+        setOpen(false)
     }
 
     const handleModalInputChange = (e) => {
