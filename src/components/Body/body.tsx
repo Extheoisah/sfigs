@@ -80,6 +80,16 @@ export default function Body(props) {
         setCurrentPage(1)
     }
 
+    const clearFilterState = () => {
+        setSearchFilter((prev) => ({
+            ...prev,
+            language: "",
+            organisation: "",
+            type: "",
+            recent: ""
+        }))
+    }
+
     useEffect(() => {
         filter()
     }, [searchFilter])
