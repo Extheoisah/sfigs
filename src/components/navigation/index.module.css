@@ -13,7 +13,7 @@
     color: var(--text-color-dark);
 }
 
-.nav_search{
+.nav_search {
     position: static;
 }
 
@@ -22,17 +22,17 @@
     outline: none;
     border: 1px solid var(--modal-links);
     color: var(--text-color);
- }
+}
 
 .nav_search_input_dark {
     background-color: transparent;
     outline: none;
     border: 1px solid var(--modal-links-dark);
     color: var(--text-color-dark);
- }
+}
 
 @media screen and (max-width: 767px) {
-    .nav_search{
+    .nav_search {
         position: absolute;
         top: 2%;
         left: 0%;
@@ -42,7 +42,7 @@
         width: 100%;
     }
 
-    .nav_search > input{
+    .nav_search > input {
         width: 100%;
     }
 }

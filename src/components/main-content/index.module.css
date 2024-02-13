@@ -11,7 +11,6 @@
     filter: var(--icon-bg-dark);
 }
 
-
 .button_light {
     background-color: var(--btn-bg);
 }
@@ -58,17 +57,16 @@
     height: 35px;
 }
 
-.nav_item_container{
+.nav_item_container {
     position: relative;
 }
 
-.toggle_btn{
+.toggle_btn {
     position: static;
 }
 
-
 @media screen and (max-width: 767px) {
-    .toggle_btn{
+    .toggle_btn {
         position: absolute;
         top: 1.5%;
         right: 4%;
@@ -76,11 +74,11 @@
 }
 
 @media screen and (max-width: 300px) {
-    .h1{
+    .h1 {
         font-size: 0.8rem;
     }
 
-    .toggle_btn{
+    .toggle_btn {
         top: 1.2%;
     }
 }

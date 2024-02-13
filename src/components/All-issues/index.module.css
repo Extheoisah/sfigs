@@ -42,10 +42,8 @@
     color: var(--text-color-dark);
 }
 
-
-
 @media screen and (max-width: 300px) {
-    .truncate_container{
+    .truncate_container {
         max-width: 15rem;
     }
 }

@@ -46,15 +46,18 @@
 
 .DialogOverlay {
     background-color: var(--btn-bg-dark);
-    opacity: .2;
+    opacity: 0.2;
     position: fixed;
     inset: 0;
     animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.DialogContent, .DialogContent2 {
+.DialogContent,
+.DialogContent2 {
     border-radius: 6px;
-    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    box-shadow:
+        hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+        hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
     position: fixed;
     top: 50%;
     left: 35%;
@@ -151,13 +154,13 @@
         max-height: auto;
     }
 
-    .DialogContent2{
+    .DialogContent2 {
         left: 49%;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .DialogContent2{
+    .DialogContent2 {
         top: 50%;
     }
 }

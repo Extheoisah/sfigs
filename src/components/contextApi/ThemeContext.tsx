@@ -1,4 +1,3 @@
-
 "use client"
 import React, { createContext, useContext, useState, useEffect } from "react"
 
@@ -22,7 +21,6 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
         ).matches
         setIsDarkMode(prefersDarkMode)
     }, [])
-    
 
     useEffect(() => {
         localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode))
