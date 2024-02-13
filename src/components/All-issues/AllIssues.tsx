@@ -1,14 +1,17 @@
 "use-client"
 // import issues from "./data"
 import style from "./index.module.css"
+import style2 from "../main-content/general.module.css"
 import { useTheme } from "../contextApi/ThemeContext"
 import Image from "next/image"
-import { CircleIcon, DiscIcon } from "@radix-ui/react-icons"
+import * as Dialog from "@radix-ui/react-dialog"
+import { DiscIcon } from "@radix-ui/react-icons"
 import { useEffect, useState } from "react"
 
 export default function AllIssues(props) {
     const { isDarkMode } = useTheme()
     const [expandText, setExpandText] = useState<boolean[]>([])
+    const [openModal, setOpenModal] = useState(false)
 
     const handleReadMorebtnClick = (index: number) => {
         setExpandText((prev) => [
@@ -16,6 +19,10 @@ export default function AllIssues(props) {
             !prev[index],
             ...prev.slice(index + 1)
         ])
+    }
+
+    const handleModalClose = () => {
+        setOpenModal(false)
     }
 
     return (
@@ -48,20 +55,12 @@ export default function AllIssues(props) {
                         </span>
                     </div>
 
-                    <div className={`${style.truncate_container} my-2 lg:max-w-screen-lg md:max-w-screen-md max-w-xs  overflow-hidden`}>
-                        <div
-                            className={`${
-                                !expandText[index]
-                                    ? "flex items-center"
-                                    : "block"
-                            }`}
-                        >
+                    <div
+                        className={`${style.truncate_container} my-2 lg:max-w-screen-lg md:max-w-screen-md max-w-xs  overflow-hidden`}
+                    >
+                        <div className={`${"flex items-center"}`}>
                             <p
-                                className={`${
-                                    !expandText[index]
-                                        ? "truncate md:whitespace-nowrap md:overflow-ellipsis md:overflow-hidden"
-                                        : ""
-                                } mt-2`}
+                                className={`${"truncate md:whitespace-nowrap md:overflow-ellipsis md:overflow-hidden"} mt-2`}
                             >
                                 {item.behaviour_text}
                             </p>
@@ -77,6 +76,58 @@ export default function AllIssues(props) {
                                         : "Read more"}
                                 </button>
                             </span>
+
+                            <Dialog.Root
+                                open={expandText[index]}
+                                onOpenChange={() =>
+                                    handleReadMorebtnClick(index)
+                                }
+                            >
+                                <Dialog.Portal>
+                                    <Dialog.Overlay
+                                        className={`${style2.DialogOverlay}`}
+                                    />
+                                    <Dialog.Content
+                                        className={`${style2.DialogContent2}  ${
+                                            isDarkMode
+                                                ? style2.dialog_dark
+                                                : style2.dialog_light
+                                        }`}
+                                    >
+                                        <div
+                                            className={
+                                                isDarkMode
+                                                    ? style2.modal_text_dark
+                                                    : style2.modal_text_light
+                                            }
+                                        >
+                                            <div className="mb-6">
+                                                <h1>Issue Description:</h1>
+                                                <p className="leading-loose">
+                                                    {item.behaviour_text}
+                                                </p>
+                                            </div>
+
+                                            <div>
+                                                <h1>Expected Behaviour:</h1>
+                                                <p className="leading-loose">
+                                                    {
+                                                        item.expected_behaviour_text
+                                                    }
+                                                </p>
+                                            </div>
+                                        </div>
+                                        {/* <Dialog.Close asChild>
+                                            <button
+                                                className={`${style.IconButton}`}
+                                                aria-label="Close"
+                                            >
+                                                <Cross2Icon />
+                                            </button>
+                                        </Dialog.Close> */}
+                                    </Dialog.Content>
+                                </Dialog.Portal>
+                            </Dialog.Root>
                         </div>
                         {item.labels.map((label, i) => (
                             <button

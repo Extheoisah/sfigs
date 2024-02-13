@@ -32,7 +32,7 @@ export default function Navigation(props) {
         setNavInput((prev) => ({ ...prev, search: "" }))
         if (item !== "" || item !== undefined) {
             const searchByLanguage = languages.filter(
-                (searchItem) => searchItem.toLowerCase()=== item.toLowerCase()
+                (searchItem) => searchItem.toLowerCase() === item.toLowerCase()
             )
             const searchByOrganisations = organisations.filter(
                 (searchItem) => searchItem.toLowerCase() === item.toLowerCase()
@@ -105,7 +105,11 @@ export default function Navigation(props) {
                             name="search"
                             id=""
                             placeholder="Search..."
-                            className="px-6 py-1 rounded-md text-black"
+                            className={`${
+                                isDarkMode
+                                    ? style.nav_search_input_dark
+                                    : style.nav_search_input_light
+                            } px-6 py-1 rounded-md text-black`}
                             onChange={handleNavSearch}
                             value={navInput.search}
                         />

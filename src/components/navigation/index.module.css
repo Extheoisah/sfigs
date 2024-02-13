@@ -17,6 +17,20 @@
     position: static;
 }
 
+.nav_search_input_light {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--modal-links);
+    color: var(--text-color);
+ }
+
+.nav_search_input_dark {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--modal-links-dark);
+    color: var(--text-color-dark);
+ }
+
 @media screen and (max-width: 767px) {
     .nav_search{
         position: absolute;

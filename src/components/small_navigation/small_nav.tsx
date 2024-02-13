@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
 import style from "../main-content/index.module.css"
+import style2 from "../main-content/general.module.css"
 import navigationItems from "../nav-data/data"
 import * as Dialog from "@radix-ui/react-dialog"
 import { useTheme } from "../contextApi/ThemeContext"
@@ -161,16 +162,16 @@ export default function Small_nav(props) {
                                             >
                                                 <Dialog.Portal>
                                                     <Dialog.Overlay
-                                                        className={`${
-                                                            style.DialogOverlay
-                                                        } ${
-                                                            isDarkMode
-                                                                ? style.dialog_dark
-                                                                : style.dialog_light
-                                                        }`}
+                                                        className={`${style2.DialogOverlay}`}
                                                     />
                                                     <Dialog.Content
-                                                        className={`${style.DialogContent}`}
+                                                        className={`${
+                                                            style2.DialogContent
+                                                        }  ${
+                                                            isDarkMode
+                                                                ? style2.dialog_dark
+                                                                : style2.dialog_light
+                                                        }`}
                                                     >
                                                         <fieldset className="w-full mt-4">
                                                             <label
@@ -193,7 +194,15 @@ export default function Small_nav(props) {
                                                                 value={
                                                                     modalInput.search
                                                                 }
-                                                                className={`${style.modal_input} rounded-md px-4 py-2 w-full`}
+                                                                className={`${
+                                                                    isDarkMode
+                                                                        ? style2.modal_input_dark
+                                                                        : style2.modal_input_light
+                                                                } rounded-md px-4 py-2 w-full ${
+                                                                    isDarkMode
+                                                                        ? style.modal_text_dark
+                                                                        : style.modal_text_light
+                                                                }`}
                                                             />
                                                         </fieldset>
                                                         {content.map(
@@ -203,8 +212,8 @@ export default function Small_nav(props) {
                                                                         <li
                                                                             className={`${
                                                                                 isDarkMode
-                                                                                    ? style.modal_links_dark
-                                                                                    : style.modal_links_light
+                                                                                    ? style2.modal_links_dark
+                                                                                    : style2.modal_links_light
                                                                             } mt-2 flex items-center px-4 py-2`}
                                                                             onClick={() =>
                                                                                 handleModalLinksClick(
@@ -240,7 +249,7 @@ export default function Small_nav(props) {
                                                         )}
                                                         <Dialog.Close asChild>
                                                             <button
-                                                                className={`${style.IconButton}`}
+                                                                className={`${style2.IconButton}`}
                                                                 aria-label="Close"
                                                             >
                                                                 <Cross2Icon />
