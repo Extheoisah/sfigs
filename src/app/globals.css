@@ -6,14 +6,14 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
-    --nav-bg-color: #F9F6EE;
+    --nav-bg-color: #f9f6ee;
     --text-color: #222222;
-    --btn-bg: #FFECB8;
+    --btn-bg: #ffecb8;
     --icon-bg: invert(0%);
-    --modal-bg: #FAFAFAE5;
+    --modal-bg: #fafafae5;
     --modal-links: #898989;
     --issues-text-color: #939393;
-    --footer-text-color: #FFECB8;
+    --footer-text-color: #ffecb8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,12 +23,12 @@
         --background-end-rgb-dark: 0, 0, 0;
         --nav-bg-color-dark: 255, 255, 255;
         --text-color-dark: #fff;
-        --btn-bg-dark: #C5C5C5;
+        --btn-bg-dark: #c5c5c5;
         --icon-bg-dark: invert(100%);
         --modal-bg-dark: #161616;
         --modal-links-dark: #2c2c2c;
         --issues-text-color-dark: #4e4e4e;
-        --footer-text-color-dark: #FAFAFA66;
+        --footer-text-color-dark: #fafafa66;
     }
 }
 
@@ -40,9 +40,12 @@ body {
 
 .dark-mode {
     color: rgb(var(--foreground-rgb-dark));
-    background: linear-gradient(to bottom,
+    background: linear-gradient(
+            to bottom,
             transparent,
-            rgb(var(--background-end-rgb-dark))) rgb(var(--background-start-rgb-dark));
+            rgb(var(--background-end-rgb-dark))
+        )
+        rgb(var(--background-start-rgb-dark));
 }
 
 .light-mode {
