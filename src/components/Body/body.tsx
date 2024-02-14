@@ -4,27 +4,7 @@ import AllIssues from "../All-issues/AllIssues"
 import Navigation from "../navigation/Navigation"
 import Footer from "../footer/footer"
 import Small_nav from "../small_navigation/small_nav"
-
-interface Labels2Element {
-    language: string
-    number: number
-    chat: {
-        chat_number: number
-        chat_icons: string
-    }
-    last_updated: string
-    icon: string
-}
-
-interface Data {
-    id: number
-    header: string
-    company: { smallIcon: string; name: string }
-    behaviour_text: string
-    expected_behaviour_text: string
-    labels: Array<string>
-    labels2: Labels2Element[]
-}
+import { Data, IssueDetails, Issue } from "../types/types"
 
 interface BodyProps {
     sessionInfo: {
@@ -38,25 +18,6 @@ interface BodyProps {
 }
 
 export default function Body(props: BodyProps) {
-    interface Issue {
-        id: number
-        header: string
-        company: { smallIcon: string; name: string }
-        behaviour_text: string
-        expected_behaviour_text: string
-        labels: string[]
-        labels2: {
-            language: string
-            number: number
-            chat: {
-                chat_number: number
-                chat_icons: string
-            }
-            last_updated: string
-            icon: string
-        }[]
-    }
-
     const [renderIssues, setRenderIssues] = useState<Issue[]>([])
     const [currentPage, setCurrentPage] = useState(1)
     const itemsPerPage = 10
@@ -84,8 +45,8 @@ export default function Body(props: BodyProps) {
 
         if (searchFilter?.language !== "") {
             filtered = filtered?.filter((item) =>
-                item.labels2.some(
-                    (el: Labels2Element) =>
+                item.issue_details.some(
+                    (el: IssueDetails) =>
                         el.language?.toLowerCase() ===
                         searchFilter?.language?.toLowerCase()
                 )
@@ -116,10 +77,6 @@ export default function Body(props: BodyProps) {
     useEffect(() => {
         filter()
     }, [searchFilter])
-
-    useEffect(() => {
-        console.log(renderIssues)
-    }, [renderIssues])
 
     useEffect(() => {
         setRenderIssues(props.data)

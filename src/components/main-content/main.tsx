@@ -3,17 +3,7 @@ import Navigation from "../navigation/Navigation"
 import Body from "../Body/body"
 import { useTheme } from "../contextApi/ThemeContext"
 import issues from "../All-issues/data"
-interface SessionInfo {
-    user: {
-        name: string | null | undefined
-        email: string | null | undefined
-        image: string | null | undefined
-    }
-}
-
-interface MainProps {
-    userInfo: SessionInfo | null
-}
+import { SessionInfo, MainProps } from "../types/types"
 
 export default function Main(props: MainProps) {
     const { isDarkMode } = useTheme()

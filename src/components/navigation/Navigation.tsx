@@ -4,27 +4,7 @@ import Image from "next/image"
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 import { useTheme } from "../contextApi/ThemeContext"
 import { useEffect } from "react"
-
-interface Labels2Element {
-    language: string
-    number: number
-    chat: {
-        chat_number: number
-        chat_icons: string
-    }
-    last_updated: string
-    icon: string
-}
-
-interface Data {
-    id: number
-    header: string
-    company: { smallIcon: string; name: string }
-    behaviour_text: string
-    expected_behaviour_text: string
-    labels: Array<string>
-    labels2: Labels2Element[]
-}
+import { Data } from "../types/types"
 interface NavProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
     issueList: Data[]

@@ -8,7 +8,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -28,7 +28,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -48,7 +48,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -68,7 +68,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -88,7 +88,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -108,7 +108,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -128,7 +128,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -148,7 +148,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -167,7 +167,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -187,7 +187,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -207,7 +207,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -227,7 +227,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -247,7 +247,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -267,7 +267,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -287,7 +287,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -307,7 +307,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -327,7 +327,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -347,7 +347,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -367,7 +367,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -387,7 +387,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -407,7 +407,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -427,7 +427,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -447,7 +447,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -467,7 +467,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -487,7 +487,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -507,7 +507,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -527,7 +527,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -547,7 +547,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -567,7 +567,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -587,7 +587,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -607,7 +607,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -627,7 +627,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -647,7 +647,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -667,7 +667,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -687,7 +687,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -707,7 +707,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -727,7 +727,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -747,7 +747,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -767,7 +767,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -787,7 +787,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -808,7 +808,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -828,7 +828,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -848,7 +848,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -868,7 +868,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -888,7 +888,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -908,7 +908,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -928,7 +928,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -948,7 +948,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -968,7 +968,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -989,7 +989,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1009,7 +1009,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1029,7 +1029,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1049,7 +1049,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1069,7 +1069,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1089,7 +1089,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1109,7 +1109,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1129,7 +1129,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1149,7 +1149,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1169,7 +1169,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1189,7 +1189,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1209,7 +1209,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1229,7 +1229,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1249,7 +1249,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1269,7 +1269,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1289,7 +1289,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1309,7 +1309,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1329,7 +1329,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1349,7 +1349,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1369,7 +1369,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1389,7 +1389,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1409,7 +1409,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1429,7 +1429,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1449,7 +1449,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1469,7 +1469,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1489,7 +1489,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1509,7 +1509,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1529,7 +1529,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1549,7 +1549,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1569,7 +1569,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1589,7 +1589,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1609,7 +1609,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1629,7 +1629,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1649,7 +1649,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1669,7 +1669,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1689,7 +1689,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1709,7 +1709,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1729,7 +1729,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1749,7 +1749,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1769,7 +1769,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1789,7 +1789,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1809,7 +1809,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1829,7 +1829,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1849,7 +1849,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1869,7 +1869,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1889,7 +1889,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1909,7 +1909,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1929,7 +1929,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -1949,7 +1949,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -1969,7 +1969,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -1989,7 +1989,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -2009,7 +2009,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -2029,7 +2029,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,
@@ -2049,7 +2049,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -2069,7 +2069,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -2089,7 +2089,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -2109,7 +2109,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -2129,7 +2129,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -2149,7 +2149,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -2169,7 +2169,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -2189,7 +2189,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Golang",
                 number: 17,
@@ -2209,7 +2209,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Typescript",
                 number: 17,
@@ -2229,7 +2229,7 @@ const issues = [
         expected_behaviour_text:
             "The navigation menu should be accessible to users with disabilities, allowing seamless navigation through the site.",
         labels: ["wallet", "open-source", "tools"],
-        labels2: [
+        issue_details: [
             {
                 language: "Javascript",
                 number: 17,

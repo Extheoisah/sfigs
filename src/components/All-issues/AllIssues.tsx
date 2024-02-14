@@ -6,27 +6,8 @@ import Image from "next/image"
 import * as Dialog from "@radix-ui/react-dialog"
 import { DiscIcon } from "@radix-ui/react-icons"
 import { useState } from "react"
+import { Data, IssueDetails } from "../types/types"
 
-interface Labels2Element {
-    language: string
-    number: number
-    chat: {
-        chat_number: number
-        chat_icons: string
-    }
-    last_updated: string
-    icon: string
-}
-
-interface Data {
-    id: number
-    header: string
-    company: { smallIcon: string; name: string }
-    behaviour_text: string
-    expected_behaviour_text: string
-    labels: Array<string>
-    labels2: Labels2Element[]
-}
 interface AllIssuesProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
     issueList: Data[]
@@ -42,17 +23,6 @@ interface AllIssuesProps {
     }
 }
 
-interface Label2 {
-    language: string
-    number: number
-    chat: {
-        chat_number: number
-        chat_icons: string
-    }
-    last_updated: string
-    icon: string
-}
-
 interface VisibleIssues {
     id: number
     header: string
@@ -60,16 +30,7 @@ interface VisibleIssues {
     behaviour_text: string
     expected_behaviour_text: string
     labels: string[]
-    labels2: {
-        language: string
-        number: number
-        chat: {
-            chat_number: number
-            chat_icons: string
-        }
-        last_updated: string
-        icon: string
-    }[]
+    issue_details: IssueDetails[]
 }
 
 export default function AllIssues(props: AllIssuesProps) {
@@ -195,7 +156,7 @@ export default function AllIssues(props: AllIssuesProps) {
                     </div>
 
                     <div className="flex items-center mt-4">
-                        {item.labels2.map((label, i) => (
+                        {item.issue_details.map((label, i) => (
                             <div key={i} className="flex flex-wrap">
                                 <span className="flex lg:text-lg text-sm items-center">
                                     <Image
