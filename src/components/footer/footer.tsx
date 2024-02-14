@@ -2,10 +2,30 @@
 import { useTheme } from "../contextApi/ThemeContext"
 import style from "./index.module.css"
 
+interface Labels2Element {
+    language: string
+    number: number
+    chat: {
+        chat_number: number
+        chat_icons: string
+    }
+    last_updated: string
+    icon: string
+}
+
+interface Data {
+    id: number
+    header: string
+    company: { smallIcon: string; name: string }
+    behaviour_text: string
+    expected_behaviour_text: string
+    labels: Array<string>
+    labels2: Labels2Element[]
+}
 interface FooterProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
-    issueList: Array<any>
-    issues: Array<any>
+    issueList: Data[]
+    issues: Data[]
     setIssueList: React.Dispatch<React.SetStateAction<any>>
     currentPage: number
     totalPages: number
@@ -22,7 +42,7 @@ interface FooterProps {
 export default function Footer(props: FooterProps) {
     const { isDarkMode } = useTheme()
 
-    const isSmallScreen = window.innerWidth <= 767
+    const isSmallScreen = window?.innerWidth <= 767
 
     const shouldShowPreviousButton = props.currentPage > 1
     const shouldShowNextButton = props.currentPage < props.totalPages

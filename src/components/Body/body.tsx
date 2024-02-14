@@ -1,27 +1,43 @@
-"use client"
 import style from "../main-content/index.module.css"
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useState } from "react"
 import AllIssues from "../All-issues/AllIssues"
 import Navigation from "../navigation/Navigation"
 import Footer from "../footer/footer"
 import Small_nav from "../small_navigation/small_nav"
 
+interface Labels2Element {
+    language: string
+    number: number
+    chat: {
+        chat_number: number
+        chat_icons: string
+    }
+    last_updated: string
+    icon: string
+}
+
+interface Data {
+    id: number
+    header: string
+    company: { smallIcon: string; name: string }
+    behaviour_text: string
+    expected_behaviour_text: string
+    labels: Array<string>
+    labels2: Labels2Element[]
+}
+
 interface BodyProps {
-    sessionInfo: any
-    data: any[]
+    sessionInfo: {
+        user: {
+            name: string | null | undefined
+            email: string | null | undefined
+            image: string | null | undefined
+        }
+    } | null
+    data: Data[]
 }
 
 export default function Body(props: BodyProps) {
-    interface Labels2Element {
-        language: string
-        number: number
-        chat: {
-            chat_number: number
-            chat_icons: string
-        }
-        last_updated: string
-        icon: string
-    }
     interface Issue {
         id: number
         header: string
@@ -40,8 +56,8 @@ export default function Body(props: BodyProps) {
             icon: string
         }[]
     }
-    const [renderIssues, setRenderIssues] = useState<Issue[]>([])
 
+    const [renderIssues, setRenderIssues] = useState<Issue[]>([])
     const [currentPage, setCurrentPage] = useState(1)
     const itemsPerPage = 10
 
@@ -54,6 +70,7 @@ export default function Body(props: BodyProps) {
     const handlePageChange = (page: number) => {
         setCurrentPage(page)
     }
+
     const [searchFilter, setSearchFilter] = useState({
         language: "",
         organisation: "",
@@ -61,7 +78,7 @@ export default function Body(props: BodyProps) {
         recent: ""
     })
 
-    // dummy filter feature to be updated with real endpoint
+    // dummy filter feature to be updated with a real endpoint
     const filter = () => {
         let filtered = props.data
 
@@ -96,16 +113,6 @@ export default function Body(props: BodyProps) {
         setCurrentPage(1)
     }
 
-    const clearFilterState = () => {
-        setSearchFilter((prev) => ({
-            ...prev,
-            language: "",
-            organisation: "",
-            type: "",
-            recent: ""
-        }))
-    }
-
     useEffect(() => {
         filter()
     }, [searchFilter])
@@ -116,7 +123,7 @@ export default function Body(props: BodyProps) {
 
     useEffect(() => {
         setRenderIssues(props.data)
-    }, [])
+    }, [props.data])
 
     return (
         <>

@@ -3,9 +3,31 @@ import Navigation from "../navigation/Navigation"
 import Body from "../Body/body"
 import { useTheme } from "../contextApi/ThemeContext"
 import issues from "../All-issues/data"
+interface SessionInfo {
+    user: {
+        name: string | null | undefined
+        email: string | null | undefined
+        image: string | null | undefined
+    }
+}
 
-export default function Main({ sessionInfo }) {
+interface MainProps {
+    userInfo: SessionInfo | null
+}
+
+export default function Main(props: MainProps) {
     const { isDarkMode } = useTheme()
+
+    const sessionInfo: SessionInfo | null = props.userInfo
+        ? {
+              user: {
+                  name: props.userInfo.user.name || "",
+                  email: props.userInfo.user.email || "",
+                  image: props.userInfo.user.image || ""
+              }
+          }
+        : null
+
     return (
         <>
             <section
@@ -13,7 +35,7 @@ export default function Main({ sessionInfo }) {
                     isDarkMode ? "dark-mode" : "light-mode"
                 } min-h-screen w-screen`}
             >
-                <Body data={issues} userInfo={sessionInfo} />
+                <Body data={issues} sessionInfo={sessionInfo} />
             </section>
         </>
     )

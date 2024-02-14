@@ -7,10 +7,30 @@ import * as Dialog from "@radix-ui/react-dialog"
 import { DiscIcon } from "@radix-ui/react-icons"
 import { useState } from "react"
 
+interface Labels2Element {
+    language: string
+    number: number
+    chat: {
+        chat_number: number
+        chat_icons: string
+    }
+    last_updated: string
+    icon: string
+}
+
+interface Data {
+    id: number
+    header: string
+    company: { smallIcon: string; name: string }
+    behaviour_text: string
+    expected_behaviour_text: string
+    labels: Array<string>
+    labels2: Labels2Element[]
+}
 interface AllIssuesProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
-    issueList: Array<any>
-    issues: Array<any>
+    issueList: Data[]
+    issues: Data[]
     visibleIssues: Array<any>
     setIssueList: React.Dispatch<React.SetStateAction<any>>
     setCurrentPage: React.Dispatch<React.SetStateAction<any>>

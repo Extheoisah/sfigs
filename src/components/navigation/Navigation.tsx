@@ -5,16 +5,36 @@ import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 import { useTheme } from "../contextApi/ThemeContext"
 import { useEffect } from "react"
 
+interface Labels2Element {
+    language: string
+    number: number
+    chat: {
+        chat_number: number
+        chat_icons: string
+    }
+    last_updated: string
+    icon: string
+}
+
+interface Data {
+    id: number
+    header: string
+    company: { smallIcon: string; name: string }
+    behaviour_text: string
+    expected_behaviour_text: string
+    labels: Array<string>
+    labels2: Labels2Element[]
+}
 interface NavProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
-    issueList: Array<any>
+    issueList: Data[]
     userInfo: {
         user: {
-            name: string
-            email: string
-            image: string
+            name: string | null | undefined
+            email: string | null | undefined
+            image: string | null | undefined
         }
-    }
+    } | null
     issues: Array<any>
     setIssueList: React.Dispatch<React.SetStateAction<any>>
     setCurrentPage: React.Dispatch<React.SetStateAction<any>>
