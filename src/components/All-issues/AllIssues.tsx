@@ -35,14 +35,13 @@ interface VisibleIssues {
 
 export default function AllIssues(props: AllIssuesProps) {
     const { isDarkMode } = useTheme()
-    const [expandText, setExpandText] = useState<boolean[]>([])
+    const [expandText, setExpandText] = useState<{ [key: number]: boolean }>({})
 
     const handleReadMorebtnClick = (index: number) => {
-        setExpandText((prev) => [
-            ...prev.slice(0, index),
-            !prev[index],
-            ...prev.slice(index + 1)
-        ])
+        setExpandText((prev) => ({
+            ...prev,
+            [index]: !prev[index]
+        }))
     }
 
     return (
