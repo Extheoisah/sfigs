@@ -5,16 +5,10 @@ import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 import { useTheme } from "../contextApi/ThemeContext"
 import { useEffect } from "react"
 import { Data } from "../types/types"
+import { useSession } from "../SessionProvider/sessionProvider"
 interface NavProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
     issueList: Data[]
-    userInfo: {
-        user: {
-            name: string | null | undefined
-            email: string | null | undefined
-            image: string | null | undefined
-        }
-    } | null
     issues: Array<any>
     setIssueList: React.Dispatch<React.SetStateAction<any>>
     setCurrentPage: React.Dispatch<React.SetStateAction<any>>
@@ -27,6 +21,7 @@ interface NavProps {
 }
 
 export default function Navigation(props: NavProps) {
+    const { session } = useSession()
     const { isDarkMode } = useTheme()
     const inputRef = useRef<HTMLInputElement>(null)
 
@@ -138,9 +133,7 @@ export default function Navigation(props: NavProps) {
                     <span className="lg:mx-4 mx-1">
                         <picture className="flex w-full md:w-auto items-end justify-end">
                             <Image
-                                src={
-                                    props.userInfo?.user.image || "/vercel.svg"
-                                }
+                                src={session.user.image || "/vercel.svg"}
                                 alt="Vercel Logo"
                                 className="rounded-full"
                                 width={48}

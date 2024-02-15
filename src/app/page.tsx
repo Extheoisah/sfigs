@@ -1,19 +1,15 @@
 import { auth } from "./auth"
 import Main from "@/components/main-content/main"
+import { SessionProvider } from "@/components/SessionProvider/sessionProvider"
 
 export default async function Home() {
     const session = await auth()
-    interface Session {
-        user: {
-            name: string | null | undefined
-            email: string | null | undefined
-            image: string | null | undefined
-        }
-    }
 
     return (
-        <main>
-            <Main userInfo={session as Session} />
-        </main>
+        <SessionProvider initialData={session}>
+            <main>
+                <Main />
+            </main>
+        </SessionProvider>
     )
 }

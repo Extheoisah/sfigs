@@ -1,13 +1,10 @@
 export interface SessionInfo {
     user: {
-        name: string | null | undefined
-        email: string | null | undefined
-        image: string | null | undefined
+        name?: string | null | undefined
+        email?: string | null | undefined
+        image?: string | null | undefined
     }
-}
-
-export interface MainProps {
-    userInfo: SessionInfo | null
+    accessToken?: string | null | undefined
 }
 
 export interface IssueDetails {

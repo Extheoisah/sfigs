@@ -7,13 +7,6 @@ import Small_nav from "../small_navigation/small_nav"
 import { Data, IssueDetails, Issue } from "../types/types"
 
 interface BodyProps {
-    sessionInfo: {
-        user: {
-            name: string | null | undefined
-            email: string | null | undefined
-            image: string | null | undefined
-        }
-    } | null
     data: Data[]
 }
 
@@ -85,7 +78,6 @@ export default function Body(props: BodyProps) {
     return (
         <>
             <Navigation
-                userInfo={props.sessionInfo}
                 issues={props.data}
                 searchParams={searchFilter}
                 setSearchParams={setSearchFilter}

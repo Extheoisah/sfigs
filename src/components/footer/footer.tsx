@@ -1,7 +1,7 @@
 "use client"
 import { useTheme } from "../contextApi/ThemeContext"
 import style from "./index.module.css"
-import { Data, Labels2Element } from "../types/types"
+import { Data } from "../types/types"
 interface FooterProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
     issueList: Data[]
