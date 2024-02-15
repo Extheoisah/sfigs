@@ -71,10 +71,6 @@ export default function Body(props: BodyProps) {
         filter()
     }, [searchFilter])
 
-    useEffect(() => {
-        setRenderIssues(props.data)
-    }, [props.data])
-
     return (
         <>
             <Navigation
