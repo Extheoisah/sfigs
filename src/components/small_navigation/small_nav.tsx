@@ -12,7 +12,7 @@ import {
     Cross2Icon
 } from "@radix-ui/react-icons"
 import { useState, useRef, useEffect, ChangeEvent } from "react"
-import { Data } from "../types/types"
+import { Data, FilterTypes } from "../types/types"
 interface SmallNavProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
     issueList: Data[]
@@ -57,16 +57,9 @@ export default function Small_nav(props: SmallNavProps) {
         image?: string
     }
 
-    interface PrevType {
-        language: string
-        organisation: string
-        type: string
-        recent: string
-    }
-
     // retrieve text of links clicked on popup modal
     const handleModalLinksClick = (item: ModalLinksItem) => {
-        props.setSearchParams((prev: PrevType) => ({
+        props.setSearchParams((prev: FilterTypes) => ({
             ...prev,
             language: languages.includes(item.text) ? item.text : prev.language,
             organisation: organisations.includes(item.text)
@@ -96,28 +89,28 @@ export default function Small_nav(props: SmallNavProps) {
             )
 
             if (searchByLanguage && selectedNavItem === "language") {
-                props.setSearchParams((prev: PrevType) => ({
+                props.setSearchParams((prev: FilterTypes) => ({
                     ...prev,
                     language: searchByLanguage.toString()
                 }))
             }
 
             if (searchByOrganisations && selectedNavItem === "organisation") {
-                props.setSearchParams((prev: PrevType) => ({
+                props.setSearchParams((prev: FilterTypes) => ({
                     ...prev,
                     organisation: searchByOrganisations.toString()
                 }))
             }
 
             if (searchByTypes && selectedNavItem === "type") {
-                props.setSearchParams((prev: PrevType) => ({
+                props.setSearchParams((prev: FilterTypes) => ({
                     ...prev,
                     type: searchByTypes.toString()
                 }))
             }
 
             if (searchByRecent && selectedNavItem === "recent") {
-                props.setSearchParams((prev: PrevType) => ({
+                props.setSearchParams((prev: FilterTypes) => ({
                     ...prev,
                     recent: searchByRecent.toString()
                 }))

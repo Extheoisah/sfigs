@@ -125,7 +125,7 @@ export default function Navigation(props: NavProps) {
                                 isDarkMode
                                     ? style.nav_search_input_dark
                                     : style.nav_search_input_light
-                            } px-6 py-1 rounded-md text-black`}
+                            } px-12 py-2 rounded-md text-black`}
                             onChange={handleNavSearch}
                             value={navInput.search}
                         />

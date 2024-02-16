@@ -4,9 +4,9 @@ import style2 from "../main-content/general.module.css"
 import { useTheme } from "../contextApi/ThemeContext"
 import Image from "next/image"
 import * as Dialog from "@radix-ui/react-dialog"
-import { DiscIcon } from "@radix-ui/react-icons"
-import { useState } from "react"
-import { Data, IssueDetails } from "../types/types"
+import { DiscIcon, EraserIcon } from "@radix-ui/react-icons"
+import { useEffect, useState } from "react"
+import { Data, IssueDetails, FilterTypes } from "../types/types"
 
 interface AllIssuesProps {
     setSearchParams: React.Dispatch<React.SetStateAction<any>>
@@ -36,6 +36,7 @@ interface VisibleIssues {
 export default function AllIssues(props: AllIssuesProps) {
     const { isDarkMode } = useTheme()
     const [expandText, setExpandText] = useState<{ [key: number]: boolean }>({})
+    const [showClearBtn, setShowClearBtn] = useState<boolean>(false)
 
     const handleReadMorebtnClick = (index: number) => {
         setExpandText((prev) => ({
@@ -44,12 +45,50 @@ export default function AllIssues(props: AllIssuesProps) {
         }))
     }
 
+    const clearFilterSearch = () => {
+        props.setSearchParams((prev: FilterTypes) => ({
+            ...prev,
+            language: "",
+            recent: "",
+            organisation: "",
+            type: ""
+        }))
+    }
+
+    const showClear_btn = () => {
+        if (
+            props.searchParams.language !== "" ||
+            props.searchParams.organisation !== "" ||
+            props.searchParams.recent !== "" ||
+            props.searchParams.type !== ""
+        ) {
+            setShowClearBtn(true)
+        } else {
+            setShowClearBtn(false)
+        }
+    }
+
+    useEffect(() => {
+        showClear_btn()
+    }, [props.searchParams])
+
     return (
         <div
             className={`${style.issues_container} ${
                 isDarkMode ? style.issues_dark : style.issues_light
             }`}
         >
+            {showClearBtn && (
+                <button
+                    className={`${isDarkMode ? style.button_dark : style.button_light} flex fixed lg:right-48 right-9 bottom-8 rounded-xl px-2 py-2 justify-between items-center`}
+                    onClick={clearFilterSearch}
+                >
+                    Clear
+                    <span className="mx-2">
+                        <EraserIcon />
+                    </span>
+                </button>
+            )}
             {props.visibleIssues.map((item: VisibleIssues, index: number) => (
                 <a
                     key={item.id}

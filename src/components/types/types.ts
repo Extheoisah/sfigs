@@ -7,6 +7,13 @@ export interface SessionInfo {
     accessToken?: string | null | undefined
 }
 
+export interface FilterTypes {
+    language: string
+    organisation: string
+    type: string
+    recent: string
+}
+
 export interface IssueDetails {
     language: string
     number: number

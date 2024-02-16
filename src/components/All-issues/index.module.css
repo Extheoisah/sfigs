@@ -11,6 +11,16 @@
     color: var(--issues-text-color);
 }
 
+.button_light {
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+}
+
+.button_dark {
+    background-color: var(--btn-bg-dark);
+    color: var(--text-color-dark);
+}
+
 .issues_item {
     border-bottom: 1px solid var(--btn-bg-dark);
     padding: 2% 2%;
