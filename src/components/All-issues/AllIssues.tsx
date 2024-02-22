@@ -186,7 +186,7 @@ export default function AllIssues(props: AllIssuesProps) {
                                     isDarkMode
                                         ? style.issues_button_dark
                                         : style.issues_button_light
-                                } md:mx-5 mx-2 mt-2`}
+                                } mx-2 mt-2`}
                             >
                                 {label}
                             </button>
