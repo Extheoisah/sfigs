@@ -64,7 +64,7 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["Typescript", "Docker"]
+        "languages": ["TypeScript"]
     },
 
     "Bitcoin Core": {
@@ -87,7 +87,7 @@
     "Bitcoin XPUB Converter": {
         "name": "Bitcoin XPUB Converter",
         "description": "",
-        "link": "https://github.com/jlopp/xpub-converter",
+        "link": "https://github.com/jlopp/xpub-converter/issues",
         "org": {
             "link": "",
             "name": ""
@@ -98,13 +98,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["Js"]
+        "languages": ["JavaScript"]
     },
 
     "Bitcoin Js": {
         "name": "Bitcoin Js",
         "description": "",
-        "link": "https://github.com/bitcoinjs/bitcoinjs-lib",
+        "link": "https://github.com/bitcoinjs/bitcoinjs-lib/issues",
         "org": {
             "link": "",
             "name": ""
@@ -115,13 +115,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["TS", "JS"]
+        "languages": ["TypeScript", "JavaScript"]
     },
 
     "Electrum": {
         "name": "Electrum",
         "description": "",
-        "link": "https://github.com/spesmilo/electrum",
+        "link": "https://github.com/spesmilo/electrum/issues",
         "org": {
             "link": "",
             "name": ""
@@ -138,7 +138,7 @@
     "Blue Wallet": {
         "name": "Blue Wallet",
         "description": "",
-        "link": "https://github.com/bluewallet/bluewallet",
+        "link": "https://github.com/bluewallet/bluewallet/issues",
         "org": {
             "link": "",
             "name": ""
@@ -149,13 +149,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["JS", "TS"]
+        "languages": ["JavaScript", "TypeScript"]
     },
 
     "Samourai wallet": {
         "name": "Samourai wallet",
         "description": "",
-        "link": "https://code.samourai.io/wallet",
+        "link": "https://code.samourai.io/wallet/issues",
         "org": {
             "link": "",
             "name": ""
@@ -172,7 +172,7 @@
     "LNDHub": {
         "name": "LNDHub",
         "description": "",
-        "link": "https://github.com/BlueWallet/LndHub",
+        "link": "https://github.com/BlueWallet/LndHub/issues",
         "org": {
             "link": "",
             "name": ""
@@ -183,13 +183,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["JS"]
+        "languages": ["JavaScript"]
     },
 
     "React Native LDK": {
         "name": "React Native LDK",
         "description": "",
-        "link": "https://github.com/BlueWallet/rn-ldk",
+        "link": "https://github.com/BlueWallet/rn-ldk/issues",
         "org": {
             "link": "",
             "name": ""
@@ -206,7 +206,7 @@
     "Phoenix": {
         "name": "Phoenix",
         "description": "",
-        "link": "https://github.com/ACINQ/phoenix",
+        "link": "https://github.com/ACINQ/phoenix/issues",
         "org": {
             "link": "",
             "name": ""
@@ -223,7 +223,7 @@
     "Eclair": {
         "name": "Eclair",
         "description": "",
-        "link": "https://github.com/ACINQ/eclair",
+        "link": "https://github.com/ACINQ/eclair/issues",
         "org": {
             "link": "",
             "name": ""
@@ -240,7 +240,7 @@
     "Lightning Kotlin Multiplatform": {
         "name": "Lightning Kotlin Multiplatform",
         "description": "",
-        "link": "https://github.com/ACINQ/lightning-kmp",
+        "link": "https://github.com/ACINQ/lightning-kmp/issues",
         "org": {
             "link": "",
             "name": ""
@@ -257,7 +257,7 @@
     "Btcd": {
         "name": "Btcd",
         "description": "",
-        "link": "https://github.com/btcsuite/btcd",
+        "link": "https://github.com/btcsuite/btcd/issues",
         "org": {
             "link": "",
             "name": ""
@@ -268,13 +268,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["GO"]
+        "languages": ["Golang"]
     },
 
     "Lightning Loop": {
         "name": "Lightning Loop",
         "description": "",
-        "link": "https://github.com/lightninglabs/loop",
+        "link": "https://github.com/lightninglabs/loop/issues",
         "org": {
             "link": "",
             "name": ""
@@ -285,13 +285,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["GO"]
+        "languages": ["Golang"]
     },
 
     "RTL": {
         "name": "RTL",
         "description": "",
-        "link": "https://github.com/Ride-The-Lightning/RTL",
+        "link": "https://github.com/Ride-The-Lightning/RTL/issues",
         "org": {
             "link": "",
             "name": ""
@@ -302,13 +302,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["TS", "JS"]
+        "languages": ["TypeScript", "JavaScript"]
     },
 
     "Mempool": {
         "name": "Mempool",
         "description": "",
-        "link": "https://github.com/mempool/mempool",
+        "link": "https://github.com/mempool/mempool/issues",
         "org": {
             "link": "",
             "name": ""
@@ -319,13 +319,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["TS"]
+        "languages": ["TypeScript"]
     },
 
     "Elements Project": {
         "name": "Elements Project",
         "description": "",
-        "link": "https://github.com/elementsproject/elements",
+        "link": "https://github.com/elementsproject/elements/issues",
         "org": {
             "link": "",
             "name": ""
@@ -342,7 +342,7 @@
     "Pyblock": {
         "name": "Pyblock",
         "description": "",
-        "link": "https://github.com/curly60e/pyblock",
+        "link": "https://github.com/curly60e/pyblock/issues",
         "org": {
             "link": "",
             "name": ""
@@ -359,7 +359,7 @@
     "BitcoinJ": {
         "name": "BitcoinJ",
         "description": "",
-        "link": "https://github.com/bitcoinj/bitcoinj",
+        "link": "https://github.com/bitcoinj/bitcoinj/issues",
         "org": {
             "link": "",
             "name": ""
@@ -376,7 +376,7 @@
     "Bitbox Wallet App": {
         "name": "Bitbox Wallet App",
         "description": "",
-        "link": "https://github.com/digitalbitbox/bitbox-wallet-app",
+        "link": "https://github.com/digitalbitbox/bitbox-wallet-app/issues",
         "org": {
             "link": "",
             "name": ""
@@ -387,13 +387,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["GO", "TS"]
+        "languages": ["Golang", "TypeScript"]
     },
 
     "Trezor Firmware": {
         "name": "Trezor Firmware",
         "description": "",
-        "link": "https://github.com/trezor/trezor-firmware",
+        "link": "https://github.com/trezor/trezor-firmware/issues",
         "org": {
             "link": "",
             "name": ""
@@ -410,7 +410,7 @@
     "Join Market": {
         "name": "Join Market",
         "description": "",
-        "link": "https://github.com/JoinMarket-Org/joinmarket-clientserver",
+        "link": "https://github.com/JoinMarket-Org/joinmarket-clientserver/issues",
         "org": {
             "link": "",
             "name": ""
@@ -427,7 +427,7 @@
     "Elements Lightning": {
         "name": "Elements Lightning",
         "description": "",
-        "link": "https://github.com/ElementsProject/lightning",
+        "link": "https://github.com/ElementsProject/lightning/issues",
         "org": {
             "link": "",
             "name": ""
@@ -444,7 +444,7 @@
     "Lightning Pool": {
         "name": "Lightning Pool",
         "description": "",
-        "link": "https://github.com/lightninglabs/pool",
+        "link": "https://github.com/lightninglabs/pool/issues",
         "org": {
             "link": "",
             "name": ""
@@ -455,13 +455,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["GO"]
+        "languages": ["Golang"]
     },
 
     "Warden Terminal": {
         "name": "Warden Terminal",
         "description": "",
-        "link": "https://github.com/pxsocs/warden_terminal",
+        "link": "https://github.com/pxsocs/warden_terminal/issues",
         "org": {
             "link": "",
             "name": ""
@@ -472,13 +472,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["Python", "TS"]
+        "languages": ["Python", "TypeScript"]
     },
 
     "Robosats": {
         "name": "Robosats",
         "description": "",
-        "link": "https://github.com/RoboSats/robosats",
+        "link": "https://github.com/RoboSats/robosats/issues",
         "org": {
             "link": "",
             "name": ""
@@ -495,7 +495,7 @@
     "Join Market WebUI": {
         "name": "Join Market WebUI",
         "description": "",
-        "link": "https://github.com/joinmarket-webui/jam/",
+        "link": "https://github.com/joinmarket-webui/jam/issues",
         "org": {
             "link": "",
             "name": ""
@@ -506,13 +506,13 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["TS"]
+        "languages": ["TypeScript"]
     },
 
     "Thunderhub": {
         "name": "Thunderhub",
         "description": "",
-        "link": "https://github.com/apotdevin/thunderhub",
+        "link": "https://github.com/apotdevin/thunderhub/issues",
         "org": {
             "link": "",
             "name": ""
@@ -523,6 +523,6 @@
             "twitter": "",
             "website": ""
         },
-        "languages": ["TS"]
+        "languages": ["TypeScript"]
     }
 }
