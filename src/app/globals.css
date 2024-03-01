@@ -6,9 +6,9 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
-    --nav-bg-color: #F9F6EE;
+    --nav-bg-color: #f9f6ee;
     --text-color: #222222;
-    --btn-bg: #FFECB8;
+    --btn-bg: #ffecb8;
     --icon-bg: invert(0%);
     --modal-bg: #fafafae5;
     --modal-links: #898989;
