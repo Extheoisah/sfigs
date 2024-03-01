@@ -1,11 +1,11 @@
 {
     "BtcPayServer": {
-        "name": "BtcPayServer",
+        "name": "Btcpayserver",
         "description": "",
         "link": "https://github.com/btcpayserver/btcpayserver/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "btcpayserver"
         },
         "image": "",
         "tags": [],
@@ -17,12 +17,12 @@
     },
 
     "Wasabi": {
-        "name": "Wasabi",
+        "name": "WalletWasabi",
         "description": "",
         "link": "https://github.com/zkSNACKs/WalletWasabi/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "zkSNACKs"
         },
         "image": "",
         "tags": [],
@@ -34,12 +34,12 @@
     },
 
     "Fedimint": {
-        "name": "Fedimint",
+        "name": "fedimint",
         "description": "",
         "link": "https://github.com/fedimint/fedimint/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "fedimint"
         },
         "image": "",
         "tags": [],
@@ -51,12 +51,12 @@
     },
 
     "Polar": {
-        "name": "Polar",
+        "name": "polar",
         "description": "",
         "link": "https://github.com/jamaljsr/polar/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "jamaljsr"
         },
         "image": "",
         "tags": [],
@@ -68,12 +68,12 @@
     },
 
     "Bitcoin Core": {
-        "name": "Botcoin Core",
+        "name": "bitcoin",
         "description": "",
         "link": "https://github.com/bitcoin/bitcoin/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "bitcoin"
         },
         "image": "",
         "tags": [],
@@ -85,12 +85,12 @@
     },
 
     "Bitcoin XPUB Converter": {
-        "name": "Bitcoin XPUB Converter",
+        "name": "xpub-converter",
         "description": "",
         "link": "https://github.com/jlopp/xpub-converter/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "jlopp"
         },
         "image": "",
         "tags": [],
@@ -102,12 +102,12 @@
     },
 
     "Bitcoin Js": {
-        "name": "Bitcoin Js",
+        "name": "bitcoinjs-lib",
         "description": "",
         "link": "https://github.com/bitcoinjs/bitcoinjs-lib/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "bitcoinjs"
         },
         "image": "",
         "tags": [],
@@ -119,12 +119,12 @@
     },
 
     "Electrum": {
-        "name": "Electrum",
+        "name": "electrum",
         "description": "",
         "link": "https://github.com/spesmilo/electrum/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "spesmilo"
         },
         "image": "",
         "tags": [],
@@ -136,12 +136,12 @@
     },
 
     "Blue Wallet": {
-        "name": "Blue Wallet",
+        "name": "bluewallet",
         "description": "",
         "link": "https://github.com/bluewallet/bluewallet/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "bluewallet"
         },
         "image": "",
         "tags": [],
@@ -170,12 +170,12 @@
     },
 
     "LNDHub": {
-        "name": "LNDHub",
+        "name": "LndHub",
         "description": "",
         "link": "https://github.com/BlueWallet/LndHub/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "BlueWallet"
         },
         "image": "",
         "tags": [],
@@ -187,12 +187,12 @@
     },
 
     "React Native LDK": {
-        "name": "React Native LDK",
+        "name": "rn-ldk",
         "description": "",
         "link": "https://github.com/BlueWallet/rn-ldk/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "BlueWallet"
         },
         "image": "",
         "tags": [],
@@ -204,12 +204,12 @@
     },
 
     "Phoenix": {
-        "name": "Phoenix",
+        "name": "phoenix",
         "description": "",
         "link": "https://github.com/ACINQ/phoenix/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "ACINQ"
         },
         "image": "",
         "tags": [],
@@ -221,12 +221,12 @@
     },
 
     "Eclair": {
-        "name": "Eclair",
+        "name": "eclair",
         "description": "",
         "link": "https://github.com/ACINQ/eclair/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "ACINQ"
         },
         "image": "",
         "tags": [],
@@ -238,12 +238,12 @@
     },
 
     "Lightning Kotlin Multiplatform": {
-        "name": "Lightning Kotlin Multiplatform",
+        "name": "lightning-kmp",
         "description": "",
         "link": "https://github.com/ACINQ/lightning-kmp/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "ACINQ"
         },
         "image": "",
         "tags": [],
@@ -255,12 +255,12 @@
     },
 
     "Btcd": {
-        "name": "Btcd",
+        "name": "btcd",
         "description": "",
         "link": "https://github.com/btcsuite/btcd/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "btcsuite"
         },
         "image": "",
         "tags": [],
@@ -272,12 +272,12 @@
     },
 
     "Lightning Loop": {
-        "name": "Lightning Loop",
+        "name": "loop",
         "description": "",
         "link": "https://github.com/lightninglabs/loop/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "lightninglabs"
         },
         "image": "",
         "tags": [],
@@ -294,7 +294,7 @@
         "link": "https://github.com/Ride-The-Lightning/RTL/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "Ride-The-Lightning"
         },
         "image": "",
         "tags": [],
@@ -306,12 +306,12 @@
     },
 
     "Mempool": {
-        "name": "Mempool",
+        "name": "mempool",
         "description": "",
         "link": "https://github.com/mempool/mempool/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "mempool"
         },
         "image": "",
         "tags": [],
@@ -323,12 +323,12 @@
     },
 
     "Elements Project": {
-        "name": "Elements Project",
+        "name": "elements",
         "description": "",
         "link": "https://github.com/elementsproject/elements/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "elementsproject"
         },
         "image": "",
         "tags": [],
@@ -340,12 +340,12 @@
     },
 
     "Pyblock": {
-        "name": "Pyblock",
+        "name": "pyblock",
         "description": "",
         "link": "https://github.com/curly60e/pyblock/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "curly60e"
         },
         "image": "",
         "tags": [],
@@ -357,12 +357,12 @@
     },
 
     "BitcoinJ": {
-        "name": "BitcoinJ",
+        "name": "bitcoinJ",
         "description": "",
         "link": "https://github.com/bitcoinj/bitcoinj/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "bitcoinj"
         },
         "image": "",
         "tags": [],
@@ -374,12 +374,12 @@
     },
 
     "Bitbox Wallet App": {
-        "name": "Bitbox Wallet App",
+        "name": "bitbox-wallet-app",
         "description": "",
         "link": "https://github.com/digitalbitbox/bitbox-wallet-app/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "digitalbitbox"
         },
         "image": "",
         "tags": [],
@@ -391,12 +391,12 @@
     },
 
     "Trezor Firmware": {
-        "name": "Trezor Firmware",
+        "name": "trezor-firmware",
         "description": "",
         "link": "https://github.com/trezor/trezor-firmware/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "trezor"
         },
         "image": "",
         "tags": [],
@@ -408,12 +408,12 @@
     },
 
     "Join Market": {
-        "name": "Join Market",
+        "name": "joinmarket-clientserver",
         "description": "",
         "link": "https://github.com/JoinMarket-Org/joinmarket-clientserver/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "JoinMarket-Org"
         },
         "image": "",
         "tags": [],
@@ -425,12 +425,12 @@
     },
 
     "Elements Lightning": {
-        "name": "Elements Lightning",
+        "name": "lightning",
         "description": "",
         "link": "https://github.com/ElementsProject/lightning/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "ElementsProject"
         },
         "image": "",
         "tags": [],
@@ -442,12 +442,12 @@
     },
 
     "Lightning Pool": {
-        "name": "Lightning Pool",
+        "name": "pool",
         "description": "",
         "link": "https://github.com/lightninglabs/pool/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "lightninglabs"
         },
         "image": "",
         "tags": [],
@@ -459,12 +459,12 @@
     },
 
     "Warden Terminal": {
-        "name": "Warden Terminal",
+        "name": "warden_terminal",
         "description": "",
         "link": "https://github.com/pxsocs/warden_terminal/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "pxsocs"
         },
         "image": "",
         "tags": [],
@@ -476,12 +476,12 @@
     },
 
     "Robosats": {
-        "name": "Robosats",
+        "name": "robosats",
         "description": "",
         "link": "https://github.com/RoboSats/robosats/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "RoboSats"
         },
         "image": "",
         "tags": [],
@@ -493,12 +493,12 @@
     },
 
     "Join Market WebUI": {
-        "name": "Join Market WebUI",
+        "name": "jam",
         "description": "",
         "link": "https://github.com/joinmarket-webui/jam/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "joinmarket-webui"
         },
         "image": "",
         "tags": [],
@@ -510,12 +510,12 @@
     },
 
     "Thunderhub": {
-        "name": "Thunderhub",
+        "name": "thunderhub",
         "description": "",
         "link": "https://github.com/apotdevin/thunderhub/issues",
         "org": {
             "link": "",
-            "name": ""
+            "name": "apotdevin"
         },
         "image": "",
         "tags": [],
