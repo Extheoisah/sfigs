@@ -386,9 +386,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^18":
-  version "18.2.59"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.59.tgz#14c7bcab22e2ce71d9eaa02f78d3d55067724d7f"
-  integrity sha512-DE+F6BYEC8VtajY85Qr7mmhTd/79rJKIHCg99MU9SWPB4xvLb6D1za2vYflgZfmPqQVEr6UqJTnLXEwzpVPuOg==
+  version "18.2.63"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.63.tgz#4637c56146ad90f96d0583171edab953f7e6fe57"
+  integrity sha512-ppaqODhs15PYL2nGUOaOu2RSCCB4Difu4UFrP4I3NHLloXC/ESQzQMi9nvjfT1+rudd0d2L3fQPJxRSey+rGlQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -904,6 +904,7 @@ electron-to-chromium@^1.4.668:
   version "1.4.682"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.682.tgz#27577b88ccccc810e09b05093345cf1830f1bd65"
   integrity sha512-oCglfs8yYKs9RQjJFOHonSnhikPK3y+0SvSYc/YpYJV//6rqc0/hbwd0c7vgK4vrl6y2gJAwjkhkSGWK+z4KRA==
+
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
@@ -2588,6 +2589,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
